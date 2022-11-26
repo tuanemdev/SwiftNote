@@ -15,6 +15,7 @@
 		F8CD8D362931D05600DCB3C0 /* DataConstants.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D382931D05600DCB3C0 /* DataConstants.strings */; };
 		F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D432931DABE00DCB3C0 /* URL.rtf */; };
 		F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D492931EEBE00DCB3C0 /* UITextChecker.swift */; };
+		F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		F8CD8D432931DABE00DCB3C0 /* URL.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = URL.rtf; path = SwiftNote/Knowledge/URL/URL.rtf; sourceTree = SOURCE_ROOT; };
 		F8CD8D482931EB4400DCB3C0 /* URL.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = URL.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8CD8D492931EEBE00DCB3C0 /* UITextChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextChecker.swift; sourceTree = "<group>"; };
+		F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -184,6 +187,14 @@
 				F8CD8D482931EB4400DCB3C0 /* URL.playground */,
 			);
 			path = URL;
+			sourceTree = "<group>";
+		};
+		F8CD8D4B2931F76300DCB3C0 /* LottieView */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */,
+			);
+			path = LottieView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +272,7 @@
 			files = (
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
+				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 			);
