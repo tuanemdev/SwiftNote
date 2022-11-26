@@ -11,6 +11,8 @@
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
 		F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D242931C43C00DCB3C0 /* Preview Assets.xcassets */; };
+		F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D312931CC7300DCB3C0 /* Localizable.swift */; };
+		F8CD8D362931D05600DCB3C0 /* DataConstants.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D382931D05600DCB3C0 /* DataConstants.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8CD8D242931C43C00DCB3C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F8CD8D312931CC7300DCB3C0 /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		F8CD8D372931D05600DCB3C0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/DataConstants.strings; sourceTree = "<group>"; };
+		F8CD8D392931D05A00DCB3C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DataConstants.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +56,9 @@
 		F8CD8D1C2931C43B00DCB3C0 /* SwiftNote */ = {
 			isa = PBXGroup;
 			children = (
-				F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */,
-				F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */,
-				F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */,
-				F8CD8D232931C43C00DCB3C0 /* Preview Content */,
+				F8CD8D302931CBCD00DCB3C0 /* ContentView */,
+				F8CD8D2E2931CAF500DCB3C0 /* Func */,
+				F8CD8D2B2931CA7C00DCB3C0 /* Extension */,
 			);
 			path = SwiftNote;
 			sourceTree = "<group>";
@@ -65,6 +69,49 @@
 				F8CD8D242931C43C00DCB3C0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F8CD8D2B2931CA7C00DCB3C0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D2F2931CB1F00DCB3C0 /* String */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F8CD8D2E2931CAF500DCB3C0 /* Func */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Func;
+			sourceTree = "<group>";
+		};
+		F8CD8D2F2931CB1F00DCB3C0 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D332931CFDC00DCB3C0 /* Localizable */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		F8CD8D302931CBCD00DCB3C0 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */,
+				F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */,
+				F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */,
+				F8CD8D232931C43C00DCB3C0 /* Preview Content */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		F8CD8D332931CFDC00DCB3C0 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D312931CC7300DCB3C0 /* Localizable.swift */,
+				F8CD8D382931D05600DCB3C0 /* DataConstants.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +156,7 @@
 			knownRegions = (
 				en,
 				Base,
+				vi,
 			);
 			mainGroup = F8CD8D112931C43A00DCB3C0;
 			productRefGroup = F8CD8D1B2931C43B00DCB3C0 /* Products */;
@@ -127,6 +175,7 @@
 			files = (
 				F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */,
 				F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */,
+				F8CD8D362931D05600DCB3C0 /* DataConstants.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,11 +187,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
+				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8CD8D382931D05600DCB3C0 /* DataConstants.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8CD8D372931D05600DCB3C0 /* vi */,
+				F8CD8D392931D05A00DCB3C0 /* en */,
+			);
+			name = DataConstants.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F8CD8D262931C43C00DCB3C0 /* Debug */ = {
@@ -266,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/ContentView/Preview Content\"";
 				DEVELOPMENT_TEAM = UZVJXS2K9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +357,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/ContentView/Preview Content\"";
 				DEVELOPMENT_TEAM = UZVJXS2K9J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

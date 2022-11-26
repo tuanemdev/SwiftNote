@@ -1,0 +1,10 @@
+/* 
+  DataConstants.strings
+  SwiftNote
+
+  Created by Nguyen Tuan Anh on 26/11/2022.
+  
+*/
+
+"loading_data" = "Đang tải";
+"data_loaded" = "Tải xuống hoàn tất";
