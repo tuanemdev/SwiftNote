@@ -57,8 +57,13 @@
 			isa = PBXGroup;
 			children = (
 				F8CD8D302931CBCD00DCB3C0 /* ContentView */,
-				F8CD8D2E2931CAF500DCB3C0 /* Func */,
-				F8CD8D2B2931CA7C00DCB3C0 /* Extension */,
+				F8CD8D3C2931D69900DCB3C0 /* Swift */,
+				F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */,
+				F8CD8D3A2931D62E00DCB3C0 /* Terminal */,
+				F8CD8D3D2931D74C00DCB3C0 /* Algorithm */,
+				F8CD8D3F2931D84A00DCB3C0 /* Data */,
+				F8CD8D3E2931D7D300DCB3C0 /* Knowledge */,
+				F8CD8D402931D8AE00DCB3C0 /* Vapor */,
 			);
 			path = SwiftNote;
 			sourceTree = "<group>";
@@ -112,6 +117,57 @@
 				F8CD8D382931D05600DCB3C0 /* DataConstants.strings */,
 			);
 			path = Localizable;
+			sourceTree = "<group>";
+		};
+		F8CD8D3A2931D62E00DCB3C0 /* Terminal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Terminal;
+			sourceTree = "<group>";
+		};
+		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		F8CD8D3C2931D69900DCB3C0 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F8CD8D2B2931CA7C00DCB3C0 /* Extension */,
+				F8CD8D2E2931CAF500DCB3C0 /* Func */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		F8CD8D3D2931D74C00DCB3C0 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Algorithm;
+			sourceTree = "<group>";
+		};
+		F8CD8D3E2931D7D300DCB3C0 /* Knowledge */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Knowledge;
+			sourceTree = "<group>";
+		};
+		F8CD8D3F2931D84A00DCB3C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F8CD8D402931D8AE00DCB3C0 /* Vapor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vapor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
