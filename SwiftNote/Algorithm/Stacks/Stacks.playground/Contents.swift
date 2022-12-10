@@ -48,3 +48,12 @@ extension Stack: CustomDebugStringConvertible {
         """
     }
 }
+
+/*
+ Ứng dụng:
+ + NavigationStack: iOS sử dụng để push và pop View (Screen)
+ + Phân bổ bộ nhớ ở mức kiến trúc, bộ nhớ dùng cho biến cục bộ cũng được quản lý bởi stack
+ + Dùng để giải quyết các bài toán cần quay ngược lại, ví dụ:
+        ~ Một ứng dụng chỉnh sửa ảnh support tính năng undo (hoàn tác)
+        ~ Nếu đi vào một mê cung thì bạn sẽ cần 1 sợi chỉ, để có thể quay ra mà không bị lạc thì chỉ cần lần ngược lại sợi chỉ
+ */
