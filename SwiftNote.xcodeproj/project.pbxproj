@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F80D2D0F29443AE6007C6D1A /* Stacks */ = {
+			isa = PBXGroup;
+			children = (
+				F80D2D1029443B30007C6D1A /* Stacks.playground */,
+			);
+			path = Stacks;
+			sourceTree = "<group>";
+		};
 		F8CD8D112931C43A00DCB3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +166,7 @@
 		F8CD8D3D2931D74C00DCB3C0 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				F80D2D0F29443AE6007C6D1A /* Stacks */,
 			);
 			path = Algorithm;
 			sourceTree = "<group>";
