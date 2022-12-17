@@ -14,6 +14,7 @@
 		F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F526294DA790005FF046 /* PlatformViewModifier.swift */; };
 		F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F529294DB2C9005FF046 /* CollectionExt.swift */; };
 		F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F52B294DB82C005FF046 /* BoolExt.swift */; };
+		F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 		F866F526294DA790005FF046 /* PlatformViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformViewModifier.swift; sourceTree = "<group>"; };
 		F866F529294DB2C9005FF046 /* CollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExt.swift; sourceTree = "<group>"; };
 		F866F52B294DB82C005FF046 /* BoolExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExt.swift; sourceTree = "<group>"; };
+		F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPointExt.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				F8CD8D2F2931CB1F00DCB3C0 /* String */,
 				F866F528294DB22F005FF046 /* Collection */,
 				F866F52B294DB82C005FF046 /* BoolExt.swift */,
+				F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			files = (
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
+				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
