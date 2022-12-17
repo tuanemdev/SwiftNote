@@ -38,6 +38,7 @@
 		F866F529294DB2C9005FF046 /* CollectionExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionExt.swift; sourceTree = "<group>"; };
 		F866F52B294DB82C005FF046 /* BoolExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolExt.swift; sourceTree = "<group>"; };
 		F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPointExt.swift; sourceTree = "<group>"; };
+		F866F532294DBE95005FF046 /* Mathematics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Mathematics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -122,6 +123,14 @@
 				F866F529294DB2C9005FF046 /* CollectionExt.swift */,
 			);
 			path = Collection;
+			sourceTree = "<group>";
+		};
+		F866F52F294DBBE1005FF046 /* Mathematics */ = {
+			isa = PBXGroup;
+			children = (
+				F866F532294DBE95005FF046 /* Mathematics.playground */,
+			);
+			path = Mathematics;
 			sourceTree = "<group>";
 		};
 		F8CD8D112931C43A00DCB3C0 = {
@@ -239,6 +248,7 @@
 		F8CD8D3D2931D74C00DCB3C0 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				F866F52F294DBBE1005FF046 /* Mathematics */,
 				F80D2D0F29443AE6007C6D1A /* Stacks */,
 				F80D2D1129444218007C6D1A /* LinkedLists */,
 			);
