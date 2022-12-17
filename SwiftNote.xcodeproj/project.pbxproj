@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F866F51D294D9B90005FF046 /* GeometryProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxy.swift */; };
+		F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51E294D9D03005FF046 /* RoundedCorner.swift */; };
+		F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */; };
+		F866F525294DA192005FF046 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F524294DA192005FF046 /* Binding.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* Begin PBXFileReference section */
 		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F80D2D12294442FD007C6D1A /* LinkedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F866F51C294D9B90005FF046 /* GeometryProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxy.swift; sourceTree = "<group>"; };
+		F866F51E294D9D03005FF046 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewModifier.swift; sourceTree = "<group>"; };
+		F866F524294DA192005FF046 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +70,41 @@
 				F80D2D12294442FD007C6D1A /* LinkedLists.playground */,
 			);
 			path = LinkedLists;
+			sourceTree = "<group>";
+		};
+		F866F519294D9A7B005FF046 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F866F51A294D9B0E005FF046 /* View */,
+				F866F523294DA15E005FF046 /* PropertyWrapper */,
+				F866F51B294D9B5B005FF046 /* GeometryProxy */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F866F51A294D9B0E005FF046 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F866F51E294D9D03005FF046 /* RoundedCorner.swift */,
+				F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F866F51B294D9B5B005FF046 /* GeometryProxy */ = {
+			isa = PBXGroup;
+			children = (
+				F866F51C294D9B90005FF046 /* GeometryProxy.swift */,
+			);
+			path = GeometryProxy;
+			sourceTree = "<group>";
+		};
+		F866F523294DA15E005FF046 /* PropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				F866F524294DA192005FF046 /* Binding.swift */,
+			);
+			path = PropertyWrapper;
 			sourceTree = "<group>";
 		};
 		F8CD8D112931C43A00DCB3C0 = {
@@ -157,6 +200,7 @@
 		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F866F519294D9A7B005FF046 /* Extension */,
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 			);
@@ -301,12 +345,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
+				F866F51D294D9B90005FF046 /* GeometryProxy.swift in Sources */,
+				F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
 				F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
+				F866F525294DA192005FF046 /* Binding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
