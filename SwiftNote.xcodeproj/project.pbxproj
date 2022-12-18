@@ -16,6 +16,7 @@
 		F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F52B294DB82C005FF046 /* BoolExt.swift */; };
 		F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */; };
 		F866F534294DFF00005FF046 /* MaskContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F533294DFF00005FF046 /* MaskContent.swift */; };
+		F866F537294E22E5005FF046 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F536294E22E5005FF046 /* Logger.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingPointExt.swift; sourceTree = "<group>"; };
 		F866F532294DBE95005FF046 /* Mathematics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Mathematics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F866F533294DFF00005FF046 /* MaskContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskContent.swift; sourceTree = "<group>"; };
+		F866F536294E22E5005FF046 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -134,6 +136,14 @@
 				F866F532294DBE95005FF046 /* Mathematics.playground */,
 			);
 			path = Mathematics;
+			sourceTree = "<group>";
+		};
+		F866F535294E21F9005FF046 /* Debugging */ = {
+			isa = PBXGroup;
+			children = (
+				F866F536294E22E5005FF046 /* Logger.swift */,
+			);
+			path = Debugging;
 			sourceTree = "<group>";
 		};
 		F8CD8D112931C43A00DCB3C0 = {
@@ -233,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				F866F519294D9A7B005FF046 /* Extension */,
+				F866F535294E21F9005FF046 /* Debugging */,
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 			);
@@ -385,6 +396,7 @@
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
+				F866F537294E22E5005FF046 /* Logger.swift in Sources */,
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
 				F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */,
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
