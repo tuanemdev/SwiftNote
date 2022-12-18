@@ -1,6 +1,10 @@
 ## User settings
 xcuserdata/
 
+# Xcode build files
+DerivedData/
+build/
+
 ## App packaging
 *.ipa
 *.dSYM.zip
