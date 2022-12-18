@@ -25,7 +25,7 @@ final class LogStore: ObservableObject {
     private let logger: Logger = .init(subsystem: Bundle.main.bundleIdentifier!, category: String(describing: LogStore.self))
     
     private func doSomeThing() {
-        var someThingInfo: Float = 100.00
+        let someThingInfo: Float = 100.00
         // DEBUG LEVEL
         // debug và trace cùng level với nhau, chỉ được lưu trong memory
         logger.debug("Debug Level: \(someThingInfo, privacy: .public)")     // Debug Level: Secret Info

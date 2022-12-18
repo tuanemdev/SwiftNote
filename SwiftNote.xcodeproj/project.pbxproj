@@ -17,6 +17,7 @@
 		F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */; };
 		F866F534294DFF00005FF046 /* MaskContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F533294DFF00005FF046 /* MaskContent.swift */; };
 		F866F537294E22E5005FF046 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F536294E22E5005FF046 /* Logger.swift */; };
+		F866F53B294ED276005FF046 /* LLDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F53A294ED276005FF046 /* LLDBView.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		F866F532294DBE95005FF046 /* Mathematics.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Mathematics.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F866F533294DFF00005FF046 /* MaskContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskContent.swift; sourceTree = "<group>"; };
 		F866F536294E22E5005FF046 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		F866F53A294ED276005FF046 /* LLDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBView.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				F866F536294E22E5005FF046 /* Logger.swift */,
+				F866F53A294ED276005FF046 /* LLDBView.swift */,
 			);
 			path = Debugging;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 			files = (
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
+				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
