@@ -11,3 +11,8 @@ import UserNotifications
 extension AppDelegate {
     
 }
+
+// MARK: - Payload
+/*
+ Payload có cấu trúc dạng JSON, dung lượng tối đa 4KB (4096 bytes) nếu lớn hơn sẽ bị APNs từ chối.
+ */

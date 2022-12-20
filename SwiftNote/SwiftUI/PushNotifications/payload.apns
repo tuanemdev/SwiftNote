@@ -1,0 +1,13 @@
+{
+    "Simulator Target Bundle": "com.tuanem.SwiftNote",
+    "aps": {
+        "alert": {
+            "title": "Title of push notification",
+            "body": "Content of push notification"
+        },
+        "category": "file_added",
+        "mutable-content": 1
+    },
+    "image_url": "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
+    "event_type": "file_added"
+}

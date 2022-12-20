@@ -32,6 +32,7 @@
 		F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744792951ECD700AE3579 /* AppDelegate.swift */; };
 		F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744B52951EFD800AE3579 /* SceneDelegate.swift */; };
 		F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744BB2951FD5400AE3579 /* PushNotifications.swift */; };
+		F8E744BE29524C7600AE3579 /* payload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F8E744BD29524C7600AE3579 /* payload.apns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		F8E744792951ECD700AE3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8E744B52951EFD800AE3579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8E744BB2951FD5400AE3579 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
+		F8E744BD29524C7600AE3579 /* payload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = payload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				F8E744BB2951FD5400AE3579 /* PushNotifications.swift */,
+				F8E744BD29524C7600AE3579 /* payload.apns */,
 			);
 			path = PushNotifications;
 			sourceTree = "<group>";
@@ -414,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E744BE29524C7600AE3579 /* payload.apns in Resources */,
 				F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */,
 				F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */,
 				F866F53E294ED916005FF046 /* Git.rtf in Resources */,
