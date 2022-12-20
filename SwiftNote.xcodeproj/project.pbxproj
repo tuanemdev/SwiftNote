@@ -31,6 +31,7 @@
 		F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */; };
 		F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744792951ECD700AE3579 /* AppDelegate.swift */; };
 		F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744B52951EFD800AE3579 /* SceneDelegate.swift */; };
+		F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744BB2951FD5400AE3579 /* PushNotifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPicker.swift; sourceTree = "<group>"; };
 		F8E744792951ECD700AE3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8E744B52951EFD800AE3579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F8E744BB2951FD5400AE3579 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +341,7 @@
 		F8E744772951EB1000AE3579 /* PushNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				F8E744BB2951FD5400AE3579 /* PushNotifications.swift */,
 			);
 			path = PushNotifications;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
+				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
