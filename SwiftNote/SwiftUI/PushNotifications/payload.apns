@@ -5,8 +5,12 @@
             "title": "Title of push notification",
             "body": "Content of push notification"
         },
+        "badge": 2,
+        "sound": "ringtone.caf",
+        "thread-id": "game-session",
         "category": "file_added",
-        "mutable-content": 1
+        "mutable-content": 1,
+        "content-available": 1
     },
     "image_url": "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
     "event_type": "file_added"
