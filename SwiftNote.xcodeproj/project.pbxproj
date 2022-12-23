@@ -187,6 +187,7 @@
 		F8CD8D1C2931C43B00DCB3C0 /* SwiftNote */ = {
 			isa = PBXGroup;
 			children = (
+				F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */,
 				F8CD8D302931CBCD00DCB3C0 /* ContentView */,
 				F8CD8D3C2931D69900DCB3C0 /* Swift */,
 				F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */,
@@ -346,7 +347,6 @@
 			children = (
 				F8E744BB2951FD5400AE3579 /* PushNotifications.swift */,
 				F8E744BD29524C7600AE3579 /* payload.apns */,
-				F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */,
 			);
 			path = PushNotifications;
 			sourceTree = "<group>";
