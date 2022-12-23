@@ -51,6 +51,7 @@
 		F866F536294E22E5005FF046 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F866F53A294ED276005FF046 /* LLDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBView.swift; sourceTree = "<group>"; };
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
+		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -345,6 +346,7 @@
 			children = (
 				F8E744BB2951FD5400AE3579 /* PushNotifications.swift */,
 				F8E744BD29524C7600AE3579 /* payload.apns */,
+				F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */,
 			);
 			path = PushNotifications;
 			sourceTree = "<group>";
@@ -592,6 +594,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftNote/SwiftNote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/ContentView/Preview Content\"";
@@ -621,6 +624,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftNote/SwiftNote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/ContentView/Preview Content\"";
