@@ -26,12 +26,50 @@ extension AppDelegate {
     func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         let token: String = deviceToken.reduce("") { $0 + String(format: "%02x", $1) }
         print("Device Token: \(token)")
+        registerCustomActions()
     }
     
     // Đăng ký lỗi và trả về lỗi
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print(error.localizedDescription)
     }
+    
+    // MARK: - Silent Push Notification
+    // App bật Background Modes và trong payload có "content-available": 1
+    // iOS sẽ đánh thức App và cho nó tối đa 30s để thực hiện các công việc cần thiết ==> Chỉ sử dụng cho các công việc nhỏ
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) async -> UIBackgroundFetchResult {
+        guard let customValue1 = userInfo["customKey1"] as? String else { return .noData }
+        do {
+            try updateDatabase(value: customValue1)
+            return .newData
+        } catch {
+            return .failed
+        }
+    }
+    
+    private func updateDatabase(value: String) throws {
+        enum ErrorType: Error {
+            case dataEmpty
+        }
+        guard !value.isEmpty else { throw ErrorType.dataEmpty }
+        print("\(value)")
+    }
+    
+    // MARK: - Custom Actions
+    // Code ví dụ dưới đăng ký 1 category với 2 action (mỗi category có thể đăng ký tối đa 4 action, tuy nhiên khi hiển thị ở dạng banner nó chỉ hiển thị 2 custom action đầu tiên)
+    // Đưa hàm đăng ký này vào didRegisterForRemoteNotificationsWithDeviceToken (vì chỉ khi đăng ký thành công thì việc đăng ký mới có ý nghĩa)
+    private func registerCustomActions() {
+        let accept = UNNotificationAction(identifier: ActionIdentifier.accept.rawValue, title: "Accept")
+        let reject = UNNotificationAction(identifier: ActionIdentifier.reject.rawValue, title: "Reject")
+        let category = UNNotificationCategory(identifier: ActionIdentifier.categoryId, actions: [accept, reject], intentIdentifiers: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+    }
+}
+
+enum ActionIdentifier: String {
+    static let categoryId: String = "file_added"
+    case accept
+    case reject
 }
 
 // MARK: - Notification Center Delegate
@@ -53,6 +91,15 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
         // có một actionIdentifier là UNNotificationDismissActionIdentifier, tuy nhiên không như cái tên, hàm này sẽ không được gọi khi user dismiss Noti
         let userInfo = response.notification.request.content.userInfo
         handleNotification(with: userInfo)
+        let identity = response.notification.request.content.categoryIdentifier
+        guard identity == ActionIdentifier.categoryId,
+              let action = ActionIdentifier(rawValue: response.actionIdentifier) else { return }
+        switch action {
+        case .accept:
+            print("You pressed accept")
+        case .reject:
+            print("You pressed reject")
+        }
     }
     
     private func handleNotification(with userInfo: [AnyHashable: Any]) {
@@ -61,12 +108,23 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
     }
 }
 
+// MARK: - Payload Modification
+/*
+ Mục đích: Chỉnh sửa payload trước khi hiển thị cho người dùng
+ Vai trò như một cầu nối ở giữa APNs và UI
+ Các mục đích thường gặp như: tải ảnh với url được chứa trong payload, giải mã các nội dung đã được mã hoá trong payload vì mục đích bảo mật
+ Setup: File > New > Target > Notification Service Extension. Đặt tên là Payload Modification và KHÔNG active scheme (do không có nhu cầu build và debug)
+ Xcode sẽ tạo 1 Folder mới có tên giống với tên đặt phía trên và các file cần thiết: NotificationService.swift và Info.plist
+ Các công việc cần thiết sẽ được thực hiện và mô tả trong file NotificationService.swift
+ */
+
 // MARK: - Setup Xcode Project
 /*
  Bước 1: Project -> Select Targer -> Tab Signing & Capabilities -> + Capability -> Push Notifications (Cần tài khoản trả phí)
  Bước 2: Request quyền (ví dụ này đặt trong didFinishLaunchingWithOptions)
  Bước 3: Tải file Authentication Token .p8 (JWT - JSON Web Tokens)
  Bước 4: Tạo file payload.apns để test trên simulator cho thuận tiện (tệp đính kèm)
+         (Remote notifitication và NotificationService (chỉnh sửa payload) sẽ không hoạt động trên simulator)
  */
 
 // MARK: - Payload
@@ -91,8 +149,11 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
                                   }
      "thread-id": "Các push notification có cùng thread-id sẽ được group lại với nhau", ==> Nếu không có trường này thì mặc định sẽ group toàn bộ push notification của 1 App lại làm một"
      "content-available": 1, ==> Sử dụng cho silent push, giá trị 1 để nói với iOS đó là silent push, sẽ không hiển thị như push notification thông thường và đánh thức App khi nhận được notification.
+                                 (Khi không có nhu cầu sử dụng silent push, cách tốt nhất là loại bỏ cặp key-value này khỏi payload, chứ không phải set nó về giá trị 0)
                                  Do App được đánh thức trong background nên cần thêm Background Modes ở phần Setting Capability và tích chọn vào mục Remote notifications.
                                  Không quên cập nhật apns-priority bằng 5 ở HTTP headers như mô tả phía dưới, nếu không sẽ xảy ra lỗi.
+     "mutable-content": 1, ==>   Sử dụng để báo cho iOS biết cần chỉnh sửa payload trước khi hiển thị cho người dùng
+     "category": "file_added", ==> Sử dụng để custom actions, nếu category trùng với category đã được App đăng ký thì nó sẽ hiện các action tương ứng
    },
    "customKey1": "customValue1", ==> Mọi thứ bên ngoài aps được sử dụng cho mục đích gửi thêm các thông tin bổ sung (tự do custom) cho phía App để thực hiện các yêu cầu từ push notification
    "customKey2": {
