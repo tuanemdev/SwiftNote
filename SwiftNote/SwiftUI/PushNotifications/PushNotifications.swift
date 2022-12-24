@@ -90,6 +90,9 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
                                     "volume": 0.75 ==> âm lượng chạy từ 0.0 (silent) đến 1 (max volume)
                                   }
      "thread-id": "Các push notification có cùng thread-id sẽ được group lại với nhau", ==> Nếu không có trường này thì mặc định sẽ group toàn bộ push notification của 1 App lại làm một"
+     "content-available": 1, ==> Sử dụng cho silent push, giá trị 1 để nói với iOS đó là silent push, sẽ không hiển thị như push notification thông thường và đánh thức App khi nhận được notification.
+                                 Do App được đánh thức trong background nên cần thêm Background Modes ở phần Setting Capability và tích chọn vào mục Remote notifications.
+                                 Không quên cập nhật apns-priority bằng 5 ở HTTP headers như mô tả phía dưới, nếu không sẽ xảy ra lỗi.
    },
    "customKey1": "customValue1", ==> Mọi thứ bên ngoài aps được sử dụng cho mục đích gửi thêm các thông tin bổ sung (tự do custom) cho phía App để thực hiện các yêu cầu từ push notification
    "customKey2": {
