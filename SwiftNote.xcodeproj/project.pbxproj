@@ -20,6 +20,8 @@
 		F866F53B294ED276005FF046 /* LLDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F53A294ED276005FF046 /* LLDBView.swift */; };
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
 		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
+		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
+		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -35,6 +37,30 @@
 		F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744BB2951FD5400AE3579 /* PushNotifications.swift */; };
 		F8E744BE29524C7600AE3579 /* payload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F8E744BD29524C7600AE3579 /* payload.apns */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8BF46FA2956FEE6000D5ABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8CD8D122931C43A00DCB3C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8BF46F42956FEE6000D5ABA;
+			remoteInfo = "Payload Modification";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8BF46FD2956FEE6000D5ABA /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -55,6 +81,9 @@
 		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
 		F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
 		F8BF46D62956D3E9000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Payload Modification.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BF46F72956FEE6000D5ABA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		F8BF46F92956FEE6000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +104,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F8BF46F22956FEE6000D5ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CD8D172931C43B00DCB3C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,10 +215,20 @@
 			path = NavigationStack;
 			sourceTree = "<group>";
 		};
+		F8BF46F62956FEE6000D5ABA /* Payload Modification */ = {
+			isa = PBXGroup;
+			children = (
+				F8BF46F72956FEE6000D5ABA /* NotificationService.swift */,
+				F8BF46F92956FEE6000D5ABA /* Info.plist */,
+			);
+			path = "Payload Modification";
+			sourceTree = "<group>";
+		};
 		F8CD8D112931C43A00DCB3C0 = {
 			isa = PBXGroup;
 			children = (
 				F8CD8D1C2931C43B00DCB3C0 /* SwiftNote */,
+				F8BF46F62956FEE6000D5ABA /* Payload Modification */,
 				F8CD8D1B2931C43B00DCB3C0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -191,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */,
+				F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -376,6 +423,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F8BF46F42956FEE6000D5ABA /* Payload Modification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BF47002956FEE6000D5ABA /* Build configuration list for PBXNativeTarget "Payload Modification" */;
+			buildPhases = (
+				F8BF46F12956FEE6000D5ABA /* Sources */,
+				F8BF46F22956FEE6000D5ABA /* Frameworks */,
+				F8BF46F32956FEE6000D5ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Payload Modification";
+			productName = "Payload Modification";
+			productReference = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F8CD8D192931C43B00DCB3C0 /* SwiftNote */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8CD8D282931C43C00DCB3C0 /* Build configuration list for PBXNativeTarget "SwiftNote" */;
@@ -383,10 +447,12 @@
 				F8CD8D162931C43B00DCB3C0 /* Sources */,
 				F8CD8D172931C43B00DCB3C0 /* Frameworks */,
 				F8CD8D182931C43B00DCB3C0 /* Resources */,
+				F8BF46FD2956FEE6000D5ABA /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F8BF46FB2956FEE6000D5ABA /* PBXTargetDependency */,
 			);
 			name = SwiftNote;
 			productName = SwiftNote;
@@ -400,9 +466,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					F8BF46F42956FEE6000D5ABA = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					F8CD8D192931C43B00DCB3C0 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -423,11 +492,19 @@
 			projectRoot = "";
 			targets = (
 				F8CD8D192931C43B00DCB3C0 /* SwiftNote */,
+				F8BF46F42956FEE6000D5ABA /* Payload Modification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F8BF46F32956FEE6000D5ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CD8D182931C43B00DCB3C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -444,6 +521,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F8BF46F12956FEE6000D5ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8CD8D162931C43B00DCB3C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -474,6 +559,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		F8BF46FB2956FEE6000D5ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8BF46F42956FEE6000D5ABA /* Payload Modification */;
+			targetProxy = F8BF46FA2956FEE6000D5ABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		F8CD8D382931D05600DCB3C0 /* DataConstants.strings */ = {
 			isa = PBXVariantGroup;
@@ -487,6 +580,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F8BF46FE2956FEE6000D5ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZVJXS2K9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Payload Modification/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Payload Modification";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuanem.SwiftNote.Payload-Modification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8BF46FF2956FEE6000D5ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZVJXS2K9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Payload Modification/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Payload Modification";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuanem.SwiftNote.Payload-Modification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		F8CD8D262931C43C00DCB3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -606,6 +751,7 @@
 		F8CD8D292931C43C00DCB3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftNote/SwiftNote.entitlements;
@@ -637,6 +783,7 @@
 		F8CD8D2A2931C43C00DCB3C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SwiftNote/SwiftNote.entitlements;
@@ -668,6 +815,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F8BF47002956FEE6000D5ABA /* Build configuration list for PBXNativeTarget "Payload Modification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BF46FE2956FEE6000D5ABA /* Debug */,
+				F8BF46FF2956FEE6000D5ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F8CD8D152931C43A00DCB3C0 /* Build configuration list for PBXProject "SwiftNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
