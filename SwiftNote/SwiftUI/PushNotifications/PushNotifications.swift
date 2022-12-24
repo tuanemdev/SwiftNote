@@ -8,12 +8,14 @@
 import SwiftUI
 import UserNotifications
 
-extension AppDelegate: UNUserNotificationCenterDelegate {
+extension AppDelegate {
+    // MARK: - Register Notifications
     // Request quyền và đăng ký với APNs
-    func registerForRemoteNotifications(_ application: UIApplication) {
-        UNUserNotificationCenter.current().delegate = self
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound, .provisional]) { granted, error in
+    func registerForPushNotifications(_ application: UIApplication) {
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .badge, .sound, .provisional]) { [weak self] granted, error in
             guard granted else { return }
+            center.delegate = self?.notificationDelegate
             Task { @MainActor in
                 application.registerForRemoteNotifications()
             }
@@ -29,6 +31,33 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     // Đăng ký lỗi và trả về lỗi
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
         print(error.localizedDescription)
+    }
+}
+
+// MARK: - Notification Center Delegate
+final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, ObservableObject {
+    
+    // Mặc định iOS sẽ ẩn tất cả các notification đến khi App đang ở trạng thái foreground
+    // để hiển thị chỉ cần implement method này, nó sẽ được gọi khi notification đến khi App đang ở trạng thái foreground
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification) async -> UNNotificationPresentationOptions {
+        let userInfo = notification.request.content.userInfo
+        print("User Info: \(userInfo)")
+        return [.banner, .badge, .sound]
+    }
+    
+    // Một notification tốt thì không nên kèm theo bất kỳ hành động nào,
+    // vì phần lớn người dùng sẽ không tap vào nó và họ nên nhận đủ thông tin cần thiết hiển thị ngay trên notification.
+    // Tuy nhiên đôi khi cần thực thi một hành động nào đó khi tap vào notification thì method này sẽ được gọi.
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
+        guard response.actionIdentifier == UNNotificationDefaultActionIdentifier else { return }
+        // có một actionIdentifier là UNNotificationDismissActionIdentifier, tuy nhiên không như cái tên, hàm này sẽ không được gọi khi user dismiss Noti
+        let userInfo = response.notification.request.content.userInfo
+        handleNotification(with: userInfo)
+    }
+    
+    private func handleNotification(with userInfo: [AnyHashable: Any]) {
+        guard let customValue1 = userInfo["customKey1"] as? String else { return }
+        print("\(customValue1)")
     }
 }
 

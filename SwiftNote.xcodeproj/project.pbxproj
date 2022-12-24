@@ -19,6 +19,7 @@
 		F866F537294E22E5005FF046 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F536294E22E5005FF046 /* Logger.swift */; };
 		F866F53B294ED276005FF046 /* LLDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F53A294ED276005FF046 /* LLDBView.swift */; };
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
+		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		F866F53A294ED276005FF046 /* LLDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBView.swift; sourceTree = "<group>"; };
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
 		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
+		F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,14 @@
 			path = Git;
 			sourceTree = "<group>";
 		};
+		F8BF46D32956C9FC000D5ABA /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
 		F8CD8D112931C43A00DCB3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +275,7 @@
 		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F8BF46D32956C9FC000D5ABA /* NavigationStack */,
 				F8E744782951EC7800AE3579 /* AppDelegate */,
 				F866F519294D9A7B005FF046 /* Extension */,
 				F866F535294E21F9005FF046 /* Debugging */,
@@ -442,6 +453,7 @@
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
+				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
 				F866F537294E22E5005FF046 /* Logger.swift in Sources */,

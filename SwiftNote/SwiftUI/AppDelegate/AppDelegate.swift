@@ -8,9 +8,10 @@
 import SwiftUI
 
 class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
+    let notificationDelegate: NotificationDelegate = .init()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        registerForRemoteNotifications(application)
+        registerForPushNotifications(application)
         return true
     }
     

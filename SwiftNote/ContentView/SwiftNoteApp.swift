@@ -14,6 +14,7 @@ struct SwiftNoteApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(appDelegate.notificationDelegate)
         }
     }
 }
