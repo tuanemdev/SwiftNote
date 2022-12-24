@@ -112,13 +112,17 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
 // MARK: - Payload Modification
 /*
  Mục đích: Chỉnh sửa payload trước khi hiển thị cho người dùng
+ Khi gửi payload kèm theo cặp key-value "mutable-content": 1 để báo cho iOS biết nó cần chạy NotificationService để chỉnh sửa payload trước khi hiển thị.
  Vai trò như một cầu nối ở giữa APNs và UI
  Các mục đích thường gặp như: tải ảnh với url được chứa trong payload, giải mã các nội dung đã được mã hoá trong payload vì mục đích bảo mật
  Setup: File > New > Target > Notification Service Extension. Đặt tên là Payload Modification và KHÔNG active scheme (do không có nhu cầu build và debug)
  Xcode sẽ tạo 1 Folder mới có tên giống với tên đặt phía trên và các file cần thiết: NotificationService.swift và Info.plist
  Các công việc cần thiết sẽ được thực hiện và mô tả trong file NotificationService.swift
  */
-
+/*
+ Cài đặt App Group để share data giữa các Target (ví dụ mục đích hiện tại là main Target và Payload Modification Target)
+ Ở main target thêm Capability App Group. Thêm một group mới, đặt tên cho nó, thường sẽ là group + 
+ */
 // MARK: - Setup Xcode Project
 /*
  Bước 1: Project -> Select Targer -> Tab Signing & Capabilities -> + Capability -> Push Notifications (Cần tài khoản trả phí)

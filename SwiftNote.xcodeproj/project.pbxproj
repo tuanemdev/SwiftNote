@@ -22,6 +22,7 @@
 		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
 		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
 		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8BF4702295715A6000D5ABA /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF4701295715A6000D5ABA /* ROT13.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -84,6 +85,8 @@
 		F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Payload Modification.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BF46F72956FEE6000D5ABA /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		F8BF46F92956FEE6000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BF4701295715A6000D5ABA /* ROT13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13.swift; sourceTree = "<group>"; };
+		F8BF471729572C20000D5ABA /* Payload Modification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Payload Modification.entitlements"; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -218,8 +221,10 @@
 		F8BF46F62956FEE6000D5ABA /* Payload Modification */ = {
 			isa = PBXGroup;
 			children = (
+				F8BF471729572C20000D5ABA /* Payload Modification.entitlements */,
 				F8BF46F72956FEE6000D5ABA /* NotificationService.swift */,
 				F8BF46F92956FEE6000D5ABA /* Info.plist */,
+				F8BF4701295715A6000D5ABA /* ROT13.swift */,
 			);
 			path = "Payload Modification";
 			sourceTree = "<group>";
@@ -526,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */,
+				F8BF4702295715A6000D5ABA /* ROT13.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +589,7 @@
 		F8BF46FE2956FEE6000D5ABA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZVJXS2K9J;
@@ -609,6 +616,7 @@
 		F8BF46FF2956FEE6000D5ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UZVJXS2K9J;

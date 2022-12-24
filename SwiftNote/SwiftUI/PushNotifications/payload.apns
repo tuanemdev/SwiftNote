@@ -12,6 +12,6 @@
         "mutable-content": 1,
         "content-available": 1
     },
-    "image_url": "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
+    "media_url": "https://developer.apple.com/assets/elements/icons/swiftui/swiftui-96x96_2x.png",
     "event_type": "file_added"
 }
