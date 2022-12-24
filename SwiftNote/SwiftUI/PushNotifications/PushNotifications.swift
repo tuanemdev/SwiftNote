@@ -86,8 +86,9 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
     // Một notification tốt thì không nên kèm theo bất kỳ hành động nào,
     // vì phần lớn người dùng sẽ không tap vào nó và họ nên nhận đủ thông tin cần thiết hiển thị ngay trên notification.
     // Tuy nhiên đôi khi cần thực thi một hành động nào đó khi tap vào notification thì method này sẽ được gọi.
+    @MainActor // Fix crash: Sử dụng hàm async bị dính lỗi crash, báo cần thực hiện tác vụ trên main thread.
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse) async {
-        guard response.actionIdentifier == UNNotificationDefaultActionIdentifier else { return }
+        // guard response.actionIdentifier == UNNotificationDefaultActionIdentifier else { return } (Comment để không chạy vào return khi ấn vào Custom Action button)
         // có một actionIdentifier là UNNotificationDismissActionIdentifier, tuy nhiên không như cái tên, hàm này sẽ không được gọi khi user dismiss Noti
         let userInfo = response.notification.request.content.userInfo
         handleNotification(with: userInfo)
