@@ -1,13 +1,39 @@
+## OS X temporary files
+.DS_Store
+.Trashes
+*.swp
+*.lock
+
+
 ## User settings
 xcuserdata/
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+*.xccheckout
 
-# Xcode build files
+
+## Xcode build files
 DerivedData/
 build/
 
-.DS_Store
+
+## Xcode private settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
 
 ## App packaging
 *.ipa
 *.dSYM.zip
 *.dSYM
+
+
+##
+*.moved-aside

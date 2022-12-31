@@ -121,8 +121,12 @@ final class NotificationDelegate: NSObject, UNUserNotificationCenterDelegate, Ob
  */
 /*
  Cài đặt App Group để share data giữa các Target (ví dụ mục đích hiện tại là main Target và Payload Modification Target)
- Ở main target thêm Capability App Group. Thêm một group mới, đặt tên cho nó, thường sẽ là group + 
+ Ở main target thêm Capability App Group. Thêm một group mới, đặt tên cho nó, thường sẽ là group + bundleId
+ Ở Payload Modification cũng thêm Capability App Group. Tích chọn vào group đã tạo phía trên.
  */
+
+// MARK: - UINotification Modification
+
 // MARK: - Setup Xcode Project
 /*
  Bước 1: Project -> Select Targer -> Tab Signing & Capabilities -> + Capability -> Push Notifications (Cần tài khoản trả phí)
