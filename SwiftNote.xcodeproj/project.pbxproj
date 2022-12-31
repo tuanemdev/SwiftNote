@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F832EAB32960295B0063C979 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB22960295B0063C979 /* Bundle.swift */; };
+		F832EAB629602F270063C979 /* Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB529602F270063C979 /* Syntax.swift */; };
 		F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */; };
 		F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51E294D9D03005FF046 /* RoundedCorner.swift */; };
 		F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */; };
@@ -69,6 +70,7 @@
 		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F80D2D12294442FD007C6D1A /* LinkedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F832EAB22960295B0063C979 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
+		F832EAB529602F270063C979 /* Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntax.swift; sourceTree = "<group>"; };
 		F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxyExt.swift; sourceTree = "<group>"; };
 		F866F51E294D9D03005FF046 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewModifier.swift; sourceTree = "<group>"; };
@@ -150,6 +152,14 @@
 				F832EAB22960295B0063C979 /* Bundle.swift */,
 			);
 			path = Bundle;
+			sourceTree = "<group>";
+		};
+		F832EAB429602F000063C979 /* Syntax */ = {
+			isa = PBXGroup;
+			children = (
+				F832EAB529602F270063C979 /* Syntax.swift */,
+			);
+			path = Syntax;
 			sourceTree = "<group>";
 		};
 		F866F519294D9A7B005FF046 /* Extension */ = {
@@ -357,6 +367,7 @@
 		F8CD8D3C2931D69900DCB3C0 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				F832EAB429602F000063C979 /* Syntax */,
 				F8CD8D2B2931CA7C00DCB3C0 /* Extension */,
 				F8CD8D2E2931CAF500DCB3C0 /* Func */,
 			);
@@ -559,6 +570,7 @@
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
+				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
