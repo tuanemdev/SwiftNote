@@ -10,6 +10,7 @@
 		F832EAB32960295B0063C979 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB22960295B0063C979 /* Bundle.swift */; };
 		F832EAB629602F270063C979 /* Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB529602F270063C979 /* Syntax.swift */; };
 		F832EAB829605A470063C979 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB729605A470063C979 /* StringExt.swift */; };
+		F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EABA2960765C0063C979 /* SwiftCharts.swift */; };
 		F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */; };
 		F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51E294D9D03005FF046 /* RoundedCorner.swift */; };
 		F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */; };
@@ -73,6 +74,7 @@
 		F832EAB22960295B0063C979 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		F832EAB529602F270063C979 /* Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntax.swift; sourceTree = "<group>"; };
 		F832EAB729605A470063C979 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
+		F832EABA2960765C0063C979 /* SwiftCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCharts.swift; sourceTree = "<group>"; };
 		F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxyExt.swift; sourceTree = "<group>"; };
 		F866F51E294D9D03005FF046 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewModifier.swift; sourceTree = "<group>"; };
@@ -162,6 +164,14 @@
 				F832EAB529602F270063C979 /* Syntax.swift */,
 			);
 			path = Syntax;
+			sourceTree = "<group>";
+		};
+		F832EAB9296075FB0063C979 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F832EABA2960765C0063C979 /* SwiftCharts.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		F866F519294D9A7B005FF046 /* Extension */ = {
@@ -356,6 +366,7 @@
 		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F832EAB9296075FB0063C979 /* Components */,
 				F8BF46D32956C9FC000D5ABA /* NavigationStack */,
 				F8E744782951EC7800AE3579 /* AppDelegate */,
 				F866F519294D9A7B005FF046 /* Extension */,
@@ -571,6 +582,7 @@
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
+				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
