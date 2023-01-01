@@ -11,6 +11,7 @@
 		F832EAB629602F270063C979 /* Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB529602F270063C979 /* Syntax.swift */; };
 		F832EAB829605A470063C979 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB729605A470063C979 /* StringExt.swift */; };
 		F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EABA2960765C0063C979 /* SwiftCharts.swift */; };
+		F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAC0296139810063C979 /* FixedInnerHeight.swift */; };
 		F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */; };
 		F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51E294D9D03005FF046 /* RoundedCorner.swift */; };
 		F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */; };
@@ -75,6 +76,7 @@
 		F832EAB529602F270063C979 /* Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntax.swift; sourceTree = "<group>"; };
 		F832EAB729605A470063C979 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		F832EABA2960765C0063C979 /* SwiftCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCharts.swift; sourceTree = "<group>"; };
+		F832EAC0296139810063C979 /* FixedInnerHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedInnerHeight.swift; sourceTree = "<group>"; };
 		F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxyExt.swift; sourceTree = "<group>"; };
 		F866F51E294D9D03005FF046 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewModifier.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				F866F526294DA790005FF046 /* PlatformViewModifier.swift */,
 				F866F533294DFF00005FF046 /* MaskContent.swift */,
 				F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */,
+				F832EAC0296139810063C979 /* FixedInnerHeight.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -599,6 +602,7 @@
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F832EAB829605A470063C979 /* StringExt.swift in Sources */,
+				F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
 				F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */,
 				F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */,
