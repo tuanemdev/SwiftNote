@@ -12,6 +12,10 @@
 		F832EAB829605A470063C979 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB729605A470063C979 /* StringExt.swift */; };
 		F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EABA2960765C0063C979 /* SwiftCharts.swift */; };
 		F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAC0296139810063C979 /* FixedInnerHeight.swift */; };
+		F832EAC42961A89A0063C979 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAC32961A89A0063C979 /* WebView.swift */; };
+		F832EAC729628E760063C979 /* LocalWebsite.html in Resources */ = {isa = PBXBuildFile; fileRef = F832EAC629628E760063C979 /* LocalWebsite.html */; };
+		F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAC8296292B70063C979 /* WebViewModel.swift */; };
+		F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EACC296294CB0063C979 /* SpinCircleLoader.swift */; };
 		F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */; };
 		F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51E294D9D03005FF046 /* RoundedCorner.swift */; };
 		F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */; };
@@ -77,6 +81,10 @@
 		F832EAB729605A470063C979 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		F832EABA2960765C0063C979 /* SwiftCharts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftCharts.swift; sourceTree = "<group>"; };
 		F832EAC0296139810063C979 /* FixedInnerHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedInnerHeight.swift; sourceTree = "<group>"; };
+		F832EAC32961A89A0063C979 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F832EAC629628E760063C979 /* LocalWebsite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = LocalWebsite.html; sourceTree = "<group>"; };
+		F832EAC8296292B70063C979 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		F832EACC296294CB0063C979 /* SpinCircleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinCircleLoader.swift; sourceTree = "<group>"; };
 		F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxyExt.swift; sourceTree = "<group>"; };
 		F866F51E294D9D03005FF046 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
 		F866F520294D9E36005FF046 /* ConditionalViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalViewModifier.swift; sourceTree = "<group>"; };
@@ -171,9 +179,44 @@
 		F832EAB9296075FB0063C979 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F832EABA2960765C0063C979 /* SwiftCharts.swift */,
+				F832EACA2962946A0063C979 /* Charts */,
+				F832EACB2962948D0063C979 /* Loader */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F832EAC22961A83B0063C979 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				F832EAC32961A89A0063C979 /* WebView.swift */,
+				F832EAC8296292B70063C979 /* WebViewModel.swift */,
+				F832EAC529628E5C0063C979 /* www */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		F832EAC529628E5C0063C979 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				F832EAC629628E760063C979 /* LocalWebsite.html */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+		F832EACA2962946A0063C979 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				F832EABA2960765C0063C979 /* SwiftCharts.swift */,
+			);
+			path = Charts;
+			sourceTree = "<group>";
+		};
+		F832EACB2962948D0063C979 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				F832EACC296294CB0063C979 /* SpinCircleLoader.swift */,
+			);
+			path = Loader;
 			sourceTree = "<group>";
 		};
 		F866F519294D9A7B005FF046 /* Extension */ = {
@@ -375,6 +418,7 @@
 				F866F519294D9A7B005FF046 /* Extension */,
 				F866F535294E21F9005FF046 /* Debugging */,
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
+				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 				F8E744772951EB1000AE3579 /* PushNotifications */,
 			);
@@ -560,6 +604,7 @@
 				F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */,
 				F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */,
 				F866F53E294ED916005FF046 /* Git.rtf in Resources */,
+				F832EAC729628E760063C979 /* LocalWebsite.html in Resources */,
 				F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */,
 				F8CD8D362931D05600DCB3C0 /* DataConstants.strings in Resources */,
 			);
@@ -584,8 +629,10 @@
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
+				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
 				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
+				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
@@ -594,6 +641,7 @@
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
+				F832EAC42961A89A0063C979 /* WebView.swift in Sources */,
 				F866F537294E22E5005FF046 /* Logger.swift in Sources */,
 				F832EAB32960295B0063C979 /* Bundle.swift in Sources */,
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
