@@ -45,11 +45,12 @@ struct WebView: UIViewRepresentable {
         let configuration: WKWebViewConfiguration = .init()
         configuration.defaultWebpagePreferences = preferences
         configuration.dataDetectorTypes = [.all]
-        configuration.userContentController.add(self.makeCoordinator(), name: "iOSNative")
+        configuration.userContentController.add(self.makeCoordinator(), name: "jsMessageHandler")
         
         let webView: WKWebView = .init(frame: .zero, configuration: configuration)
         webView.navigationDelegate = context.coordinator
         webView.uiDelegate = context.coordinator
+        webView.customUserAgent = "TuanEm"
         webView.allowsBackForwardNavigationGestures = true
         webView.scrollView.isScrollEnabled = true
         return webView
@@ -83,12 +84,17 @@ struct WebView: UIViewRepresentable {
             valueSubscriber?.cancel()
         }
         
+        // MARK: - WKNavigationDelegate
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             parent.viewModel.showLoader.send(false)
             webView.evaluateJavaScript("document.title") { response, error in
                 guard error == nil,
                       let title = response as? String else { return }
                 self.parent.viewModel.webTitle.send(title)
+            }
+            webView.evaluateJavaScript("document.getElementById('someElement').innerText") { response, error in
+                if error == nil,
+                   let response = response as? String { print(response) }
             }
             for page in webView.backForwardList.backList {
                 print("User visited: \(page.url.absoluteString)")
@@ -131,17 +137,30 @@ struct WebView: UIViewRepresentable {
             return .allow
         }
         
+        // MARK: - WKUIDelegate
+        func webView(_ webView: WKWebView, runJavaScriptAlertPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping () -> Void) {
+            completionHandler()
+        }
+        
+        func webView(_ webView: WKWebView, runJavaScriptConfirmPanelWithMessage message: String, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (Bool) -> Void) {
+            completionHandler(true)
+        }
+        
+        func webView(_ webView: WKWebView, runJavaScriptTextInputPanelWithPrompt prompt: String, defaultText: String?, initiatedByFrame frame: WKFrameInfo, completionHandler: @escaping (String?) -> Void) {
+            completionHandler("TextInput")
+        }
     }
 }
 
+// MARK: - WKScriptMessageHandler
 extension WebView.Coordinator: WKScriptMessageHandler {
     func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
-        if message.name == "iOSNative" {
-            if let body = message.body as? [String: Any?] {
-                print("JSON value received from web is: \(body)")
-            } else if let body = message.body as? String {
-                print("String value received from web is: \(body)")
-            }
+        guard message.name == "jsMessageHandler" else { return }
+        if let body = message.body as? [String: Any?] {
+            print("JSON value received from web is: \(body)")
+        }
+        if let body = message.body as? String {
+            print("String value received from web is: \(body)")
         }
     }
 }
