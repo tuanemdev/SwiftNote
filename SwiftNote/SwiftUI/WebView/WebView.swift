@@ -12,7 +12,8 @@ import Combine
 struct WebViewExam: View {
     
     @ObservedObject private var webViewModel: WebViewModel = .init()
-    let localWeb: String = "LocalWebsite"
+    let localWeb1: String = "LocalWebsite"
+    let localWeb2: String = "Exam"
     let myWebsite: String = "https://www.tuanem.com"
     let htmlCode: String = """
     <html>
@@ -23,7 +24,7 @@ struct WebViewExam: View {
     """
     
     var body: some View {
-        WebView(urlType: .remote(myWebsite), viewModel: webViewModel)
+        WebView(urlType: .local(localWeb2), viewModel: webViewModel)
     }
 }
 
