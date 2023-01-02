@@ -23,7 +23,7 @@ struct WebViewExam: View {
     """
     
     var body: some View {
-        WebView(urlType: .local(localWeb), viewModel: webViewModel)
+        WebView(urlType: .remote(myWebsite), viewModel: webViewModel)
     }
 }
 
@@ -44,6 +44,7 @@ struct WebView: UIViewRepresentable {
         
         let configuration: WKWebViewConfiguration = .init()
         configuration.defaultWebpagePreferences = preferences
+        configuration.dataDetectorTypes = [.all]
         configuration.userContentController.add(self.makeCoordinator(), name: "iOSNative")
         
         let webView: WKWebView = .init(frame: .zero, configuration: configuration)
@@ -85,9 +86,12 @@ struct WebView: UIViewRepresentable {
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
             parent.viewModel.showLoader.send(false)
             webView.evaluateJavaScript("document.title") { response, error in
-                guard error != nil else { return }
-                guard let title = response as? String else { return }
+                guard error == nil,
+                      let title = response as? String else { return }
                 self.parent.viewModel.webTitle.send(title)
+            }
+            for page in webView.backForwardList.backList {
+                print("User visited: \(page.url.absoluteString)")
             }
         }
         
