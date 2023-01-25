@@ -48,6 +48,8 @@
 		F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744B52951EFD800AE3579 /* SceneDelegate.swift */; };
 		F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744BB2951FD5400AE3579 /* PushNotifications.swift */; };
 		F8E744BE29524C7600AE3579 /* payload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F8E744BD29524C7600AE3579 /* payload.apns */; };
+		F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C72980E03B0003A151 /* ArrayExt.swift */; };
+		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 		F8E744B52951EFD800AE3579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8E744BB2951FD5400AE3579 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
 		F8E744BD29524C7600AE3579 /* payload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = payload.apns; sourceTree = "<group>"; };
+		F8E8A6C72980E03B0003A151 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
+		F8E8A6C92980F61B0003A151 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,6 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				F866F529294DB2C9005FF046 /* CollectionExt.swift */,
+				F8E8A6C72980E03B0003A151 /* ArrayExt.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -361,9 +366,10 @@
 			children = (
 				F8CD8D2F2931CB1F00DCB3C0 /* String */,
 				F866F528294DB22F005FF046 /* Collection */,
+				F832EAB12960291F0063C979 /* Bundle */,
 				F866F52B294DB82C005FF046 /* BoolExt.swift */,
 				F866F52D294DBA1F005FF046 /* FloatingPointExt.swift */,
-				F832EAB12960291F0063C979 /* Bundle */,
+				F8E8A6C92980F61B0003A151 /* DataExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -632,6 +638,7 @@
 			files = (
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
+				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
@@ -648,6 +655,7 @@
 				F832EAC42961A89A0063C979 /* WebView.swift in Sources */,
 				F866F537294E22E5005FF046 /* Logger.swift in Sources */,
 				F832EAB32960295B0063C979 /* Bundle.swift in Sources */,
+				F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */,
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
 				F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */,
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
