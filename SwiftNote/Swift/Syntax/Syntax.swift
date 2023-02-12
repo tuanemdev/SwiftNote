@@ -12,3 +12,9 @@ import Foundation
 #else
     // your real device code
 #endif
+
+#warning("Fix this later")
+/*
+ #error("This must be done")
+ Comment lại dòng này để có thể biên dịch
+ */
