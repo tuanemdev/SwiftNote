@@ -30,6 +30,7 @@
 		F866F537294E22E5005FF046 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F536294E22E5005FF046 /* Logger.swift */; };
 		F866F53B294ED276005FF046 /* LLDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F53A294ED276005FF046 /* LLDBView.swift */; };
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
+		F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86CD45529990D2F00D3CA44 /* PropertyList.swift */; };
 		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
 		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
 		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -105,6 +106,7 @@
 		F866F536294E22E5005FF046 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F866F53A294ED276005FF046 /* LLDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBView.swift; sourceTree = "<group>"; };
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
+		F86CD45529990D2F00D3CA44 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
 		F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
 		F8BF46D62956D3E9000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -303,6 +305,14 @@
 			path = Git;
 			sourceTree = "<group>";
 		};
+		F86CD45429990C8200D3CA44 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				F86CD45529990D2F00D3CA44 /* PropertyList.swift */,
+			);
+			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
 		F8BF46D32956C9FC000D5ABA /* NavigationStack */ = {
 			isa = PBXGroup;
 			children = (
@@ -427,6 +437,7 @@
 		F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				F86CD45429990C8200D3CA44 /* PropertyWrappers */,
 				F832EAB9296075FB0063C979 /* Components */,
 				F8BF46D32956C9FC000D5ABA /* NavigationStack */,
 				F8E744782951EC7800AE3579 /* AppDelegate */,
@@ -645,6 +656,7 @@
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
+				F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */,
 				F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
