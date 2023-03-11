@@ -26,3 +26,23 @@ extension Collection {
         return indices.isEmpty ? nil : indices
     }
 }
+
+// MARK: - Loại bỏ các phần tử trùng lặp nhưng giữ nguyên thứ tự sắp xếp
+extension RangeReplaceableCollection {
+    func unique<T: Hashable>(for keyPath: KeyPath<Element, T>) -> Self {
+        var unique = Set<T>()
+        return filter { unique.insert($0[keyPath: keyPath]).inserted }
+    }
+    
+    mutating func uniqueInPlace<T: Hashable>(for keyPath: KeyPath<Element, T>) {
+        var unique = Set<T>()
+        removeAll { !unique.insert($0[keyPath: keyPath]).inserted }
+    }
+}
+
+extension Sequence {
+    func unique<T: Hashable>(for keyPath: KeyPath<Element, T>) -> [Element] {
+        var unique = Set<T>()
+        return filter { unique.insert($0[keyPath: keyPath]).inserted }
+    }
+}
