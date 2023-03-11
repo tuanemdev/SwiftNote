@@ -27,3 +27,12 @@ extension Array: RawRepresentable where Element: Codable {
         return result
     }
 }
+
+// MARK: - Chia một mảng thành các mảng con nhỏ hơn với size chỉ định
+extension Array {
+    func chunked(into size: Int) -> [[Element]] {
+        return stride(from: 0, to: count, by: size).map {
+            Array(self[$0 ..< Swift.min($0 + size, count)])
+        }
+    }
+}
