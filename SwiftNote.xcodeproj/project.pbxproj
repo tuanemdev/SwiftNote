@@ -55,6 +55,7 @@
 		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
 		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
 		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
+		F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +143,7 @@
 		F8F1BCD229C31338003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD629C328BA003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8F1BCD829C328BD003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -455,6 +457,7 @@
 				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 				F8E744772951EB1000AE3579 /* PushNotifications */,
+				F8F1BCD929C36A72003BB6EB /* AppIcon */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -543,6 +546,14 @@
 				F8E744B52951EFD800AE3579 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F8F1BCD929C36A72003BB6EB /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */,
+			);
+			path = AppIcon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -680,6 +691,7 @@
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
+				F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */,
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
 				F832EAC42961A89A0063C979 /* WebView.swift in Sources */,
 				F866F537294E22E5005FF046 /* Logger.swift in Sources */,
@@ -800,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIcon-TE";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -861,6 +874,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIcon-TE";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
