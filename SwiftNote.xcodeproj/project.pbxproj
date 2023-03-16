@@ -53,6 +53,8 @@
 		F8E744BE29524C7600AE3579 /* payload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F8E744BD29524C7600AE3579 /* payload.apns */; };
 		F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C72980E03B0003A151 /* ArrayExt.swift */; };
 		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
+		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
+		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +138,10 @@
 		F8E744BD29524C7600AE3579 /* payload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = payload.apns; sourceTree = "<group>"; };
 		F8E8A6C72980E03B0003A151 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		F8E8A6C92980F61B0003A151 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
+		F8F1BCCF29C2EEC5003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		F8F1BCD229C31338003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
+		F8F1BCD629C328BA003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F8F1BCD829C328BD003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -421,6 +427,8 @@
 			children = (
 				F8CD8D312931CC7300DCB3C0 /* Localizable.swift */,
 				F8CD8D382931D05600DCB3C0 /* DataConstants.strings */,
+				F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */,
+				F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */,
 			);
 			path = Localizable;
 			sourceTree = "<group>";
@@ -628,12 +636,14 @@
 			files = (
 				F8E744BE29524C7600AE3579 /* payload.apns in Resources */,
 				F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */,
+				F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */,
 				F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */,
 				F866F53E294ED916005FF046 /* Git.rtf in Resources */,
 				F832EAC729628E760063C979 /* LocalWebsite.html in Resources */,
 				F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */,
 				F8CD8D362931D05600DCB3C0 /* DataConstants.strings in Resources */,
 				F850F77C2963422000F72009 /* Exam.html in Resources */,
+				F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -709,6 +719,24 @@
 				F8CD8D392931D05A00DCB3C0 /* en */,
 			);
 			name = DataConstants.strings;
+			sourceTree = "<group>";
+		};
+		F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F1BCCF29C2EEC5003BB6EB /* en */,
+				F8F1BCD229C31338003BB6EB /* vi */,
+			);
+			name = Localizable.stringsdict;
+			sourceTree = "<group>";
+		};
+		F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8F1BCD629C328BA003BB6EB /* en */,
+				F8F1BCD829C328BD003BB6EB /* vi */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

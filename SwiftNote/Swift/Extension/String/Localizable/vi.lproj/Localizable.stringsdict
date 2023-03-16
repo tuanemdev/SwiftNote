@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>dog_eating_carrots</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Con chó %@ của tôi ăn %#@carrotsCount@.</string>
+		<key>carrotsCount</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>0 quả củ rốt</string>
+			<key>one</key>
+			<string>1 quả củ rốt</string>
+			<key>two</key>
+			<string>2 quả củ rốt</string>
+			<key>few</key>
+			<string>vài quả củ rốt</string>
+			<key>many</key>
+			<string>rất nhiều củ cà rốt</string>
+			<key>other</key>
+			<string>rất nhiều củ cà rốt</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
