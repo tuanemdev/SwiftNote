@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 extension String {
     func localized(tableName: String? = nil) -> String {
@@ -31,3 +32,31 @@ enum DataConstants: String, Localizable {
     case loadingData = "loading_data"
     case dataLoaded = "data_loaded"
 }
+
+// MARK: - UIKit Components (via Interface Builder)
+@IBDesignable
+final class UILocalizedLabel: UILabel {
+    
+    @IBInspectable
+    var tableName: String? {
+        didSet {
+            guard let tableName = tableName else { return }
+            text = text?.localized(tableName: tableName)
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        text = text?.localized()
+    }
+}
+
+final class UILocalizedButton: UIButton {
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let title = self.title(for: .normal)?.localized()
+        setTitle(title, for: .normal)
+    }
+}
+
+// Áp dụng tương tự cho các Components muốn localized thông qua IB
