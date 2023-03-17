@@ -62,15 +62,15 @@ final class ChangeAppIconViewModel: ObservableObject {
     }
     
     func updateAppIcon(to icon: AppIcon) {
+        guard UIApplication.shared.alternateIconName != icon.iconName else {
+            /// No need to update since we're already using this icon.
+            return
+        }
+        
         let previousAppIcon = selectedAppIcon
         selectedAppIcon = icon
         
         Task { @MainActor in
-            guard UIApplication.shared.alternateIconName != icon.iconName else {
-                /// No need to update since we're already using this icon.
-                return
-            }
-            
             do {
                 try await UIApplication.shared.setAlternateIconName(icon.iconName)
             } catch {
@@ -80,6 +80,31 @@ final class ChangeAppIconViewModel: ObservableObject {
                 /// Restore previous app icon
                 selectedAppIcon = previousAppIcon
             }
+        }
+    }
+    
+    // Cẩn thận khi sử dụng vì dùng private API, có thể bị Apple reject khi review lên AppStore
+    func updateAppIconWithoutAlert(to icon: AppIcon) {
+        guard UIApplication.shared.alternateIconName != icon.iconName else {
+            /// No need to update since we're already using this icon.
+            return
+        }
+        
+        let previousAppIcon = selectedAppIcon
+        selectedAppIcon = icon
+        
+        if UIApplication.shared.responds(to: #selector(getter: UIApplication.supportsAlternateIcons)) &&
+            UIApplication.shared.supportsAlternateIcons {
+            typealias setAlternateIconName = @convention(c) (NSObject, Selector, NSString?, @escaping (NSError) -> ()) -> ()
+            
+            let selectorString = "_setAlternateIconName:completionHandler:"
+            let selector = NSSelectorFromString(selectorString)
+            let imp = UIApplication.shared.method(for: selector)
+            let method = unsafeBitCast(imp, to: setAlternateIconName.self)
+            
+            method(UIApplication.shared, selector, icon.iconName as NSString?) { _ in }
+        } else {
+            selectedAppIcon = previousAppIcon
         }
     }
     
