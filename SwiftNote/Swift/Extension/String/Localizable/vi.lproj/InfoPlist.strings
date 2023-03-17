@@ -6,3 +6,4 @@
   
 */
 "CFBundleName" = "Tên Ứng Dụng";
+"CFBundleDisplayName" = "Tên Ứng Dụng";

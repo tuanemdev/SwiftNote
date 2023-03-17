@@ -17,6 +17,7 @@
 		F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAC8296292B70063C979 /* WebViewModel.swift */; };
 		F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EACC296294CB0063C979 /* SpinCircleLoader.swift */; };
 		F843534829C4F2390007D0B1 /* OthersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843534729C4F2390007D0B1 /* OthersView.swift */; };
+		F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F843534929C513A00007D0B1 /* UsefulWebsites.swift */; };
 		F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D36C52997EBFB00880ECD /* macCheatsheet.swift */; };
 		F850F77C2963422000F72009 /* Exam.html in Resources */ = {isa = PBXBuildFile; fileRef = F850F77B2963422000F72009 /* Exam.html */; };
 		F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */; };
@@ -96,6 +97,7 @@
 		F832EAC8296292B70063C979 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		F832EACC296294CB0063C979 /* SpinCircleLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinCircleLoader.swift; sourceTree = "<group>"; };
 		F843534729C4F2390007D0B1 /* OthersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OthersView.swift; sourceTree = "<group>"; };
+		F843534929C513A00007D0B1 /* UsefulWebsites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsefulWebsites.swift; sourceTree = "<group>"; };
 		F84D36C52997EBFB00880ECD /* macCheatsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macCheatsheet.swift; sourceTree = "<group>"; };
 		F850F77B2963422000F72009 /* Exam.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Exam.html; sourceTree = "<group>"; };
 		F866F51C294D9B90005FF046 /* GeometryProxyExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryProxyExt.swift; sourceTree = "<group>"; };
@@ -498,6 +500,7 @@
 			children = (
 				F866F53C294ED8DD005FF046 /* Git */,
 				F8CD8D452931DDBD00DCB3C0 /* URL */,
+				F843534929C513A00007D0B1 /* UsefulWebsites.swift */,
 			);
 			path = Knowledge;
 			sourceTree = "<group>";
@@ -694,6 +697,7 @@
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
 				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
+				F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */,
 				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,

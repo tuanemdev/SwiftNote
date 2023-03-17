@@ -6,3 +6,4 @@
   
 */
 "CFBundleName" = "App Name";
+"CFBundleDisplayName" = "App Name";
