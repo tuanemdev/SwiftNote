@@ -32,7 +32,9 @@
 		F866F537294E22E5005FF046 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F536294E22E5005FF046 /* Logger.swift */; };
 		F866F53B294ED276005FF046 /* LLDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F866F53A294ED276005FF046 /* LLDBView.swift */; };
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
+		F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868019A29C6A7DE00D29E53 /* DeepLink.swift */; };
 		F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86CD45529990D2F00D3CA44 /* PropertyList.swift */; };
+		F8BD173429C892E30047B844 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD173329C892E30047B844 /* UserDefaults.swift */; };
 		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
 		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
 		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -113,7 +115,9 @@
 		F866F536294E22E5005FF046 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		F866F53A294ED276005FF046 /* LLDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLDBView.swift; sourceTree = "<group>"; };
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
+		F868019A29C6A7DE00D29E53 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		F86CD45529990D2F00D3CA44 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
+		F8BD173329C892E30047B844 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
 		F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
 		F8BF46D62956D3E9000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -325,12 +329,28 @@
 			path = Git;
 			sourceTree = "<group>";
 		};
+		F868019929C6A7B000D29E53 /* DeepLink */ = {
+			isa = PBXGroup;
+			children = (
+				F868019A29C6A7DE00D29E53 /* DeepLink.swift */,
+			);
+			path = DeepLink;
+			sourceTree = "<group>";
+		};
 		F86CD45429990C8200D3CA44 /* PropertyWrappers */ = {
 			isa = PBXGroup;
 			children = (
 				F86CD45529990D2F00D3CA44 /* PropertyList.swift */,
 			);
 			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		F8BD173229C891DA0047B844 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD173329C892E30047B844 /* UserDefaults.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		F8BF46D32956C9FC000D5ABA /* NavigationStack */ = {
@@ -469,6 +489,7 @@
 				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
 				F8E744772951EB1000AE3579 /* PushNotifications */,
+				F868019929C6A7B000D29E53 /* DeepLink */,
 				F8F1BCD929C36A72003BB6EB /* AppIcon */,
 				F843534629C4F2000007D0B1 /* Others */,
 			);
@@ -508,6 +529,7 @@
 		F8CD8D3F2931D84A00DCB3C0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F8BD173229C891DA0047B844 /* UserDefaults */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -691,6 +713,7 @@
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
+				F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */,
 				F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */,
 				F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
@@ -723,6 +746,7 @@
 				F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
 				F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */,
+				F8BD173429C892E30047B844 /* UserDefaults.swift in Sources */,
 				F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 				F866F525294DA192005FF046 /* BindingExt.swift in Sources */,
