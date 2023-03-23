@@ -21,9 +21,21 @@
  
  Path: /Library/Preferences
  Simulator
+ print(NSHomeDirectory())
  print(NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last! as String)
  
  Real Device
+ DEBUG:
+ + Không dùng App:
+ Window -> Devices and Simulators (⇧⌘2) ->
+ chọn App -> icon bánh răng ->
+ Download Container -> chọn nơi lưu ->
+ Mở file vừa lưu bằng tuỳ chọn: Show Package Contents
+ 
+ + Dùng App bên thứ 3:
  iExplore: https://macroplant.com/
  iMazing: https://imazing.com/
+ 
+ RELEASE:
  */
+#warning("Incomplete: Get UserDefaults of Release App")
