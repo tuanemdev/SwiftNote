@@ -34,6 +34,7 @@
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
 		F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868019A29C6A7DE00D29E53 /* DeepLink.swift */; };
 		F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86CD45529990D2F00D3CA44 /* PropertyList.swift */; };
+		F89216D529CF4A19000900D0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89216D429CF4A19000900D0 /* Keychain.swift */; };
 		F8BD173429C892E30047B844 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BD173329C892E30047B844 /* UserDefaults.swift */; };
 		F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */; };
 		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
@@ -117,6 +118,7 @@
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
 		F868019A29C6A7DE00D29E53 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		F86CD45529990D2F00D3CA44 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
+		F89216D429CF4A19000900D0 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		F8BD173329C892E30047B844 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftNote.entitlements; sourceTree = "<group>"; };
 		F8BF46D42956CA6A000D5ABA /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
@@ -345,6 +347,14 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
+		F89216D329CF49EA000900D0 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				F89216D429CF4A19000900D0 /* Keychain.swift */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		F8BD173229C891DA0047B844 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,6 +540,7 @@
 			isa = PBXGroup;
 			children = (
 				F8BD173229C891DA0047B844 /* UserDefaults */,
+				F89216D329CF49EA000900D0 /* Keychain */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -750,6 +761,7 @@
 				F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 				F866F525294DA192005FF046 /* BindingExt.swift in Sources */,
+				F89216D529CF4A19000900D0 /* Keychain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
