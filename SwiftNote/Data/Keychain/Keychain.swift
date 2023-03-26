@@ -58,7 +58,7 @@ class Keychain {
         let status = SecItemCopyMatching(query, &result)
         
         guard status == errSecSuccess,
-              let result = result as? [[AnyHashable: Any]] else {
+              let result = result as? [NSDictionary] else {
             return nil
         }
         
