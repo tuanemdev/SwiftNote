@@ -41,6 +41,8 @@
 		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8BF4702295715A6000D5ABA /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF4701295715A6000D5ABA /* ROT13.swift */; };
 		F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234DE29D01A6800C512F4 /* OverlayView.swift */; };
+		F8C234E429D0467B00C512F4 /* PeelEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E329D0467B00C512F4 /* PeelEffectView.swift */; };
+		F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E529D04BBA00C512F4 /* PeelEffect.swift */; };
 		F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C8C4692992CDC60048EF21 /* xcrun.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
@@ -130,6 +132,8 @@
 		F8BF4701295715A6000D5ABA /* ROT13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13.swift; sourceTree = "<group>"; };
 		F8BF471729572C20000D5ABA /* Payload Modification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Payload Modification.entitlements"; sourceTree = "<group>"; };
 		F8C234DE29D01A6800C512F4 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		F8C234E329D0467B00C512F4 /* PeelEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffectView.swift; sourceTree = "<group>"; };
+		F8C234E529D04BBA00C512F4 /* PeelEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffect.swift; sourceTree = "<group>"; };
 		F8C8C4692992CDC60048EF21 /* xcrun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcrun.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
@@ -392,6 +396,15 @@
 			path = Overlay;
 			sourceTree = "<group>";
 		};
+		F8C234E229D0460400C512F4 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				F8C234E329D0467B00C512F4 /* PeelEffectView.swift */,
+				F8C234E529D04BBA00C512F4 /* PeelEffect.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		F8CD8D112931C43A00DCB3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +518,7 @@
 				F8E744782951EC7800AE3579 /* AppDelegate */,
 				F866F519294D9A7B005FF046 /* Extension */,
 				F866F535294E21F9005FF046 /* Debugging */,
+				F8C234E229D0460400C512F4 /* Animations */,
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
 				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
@@ -732,6 +746,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C234E429D0467B00C512F4 /* PeelEffectView.swift in Sources */,
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
@@ -765,6 +780,7 @@
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F843534829C4F2390007D0B1 /* OthersView.swift in Sources */,
 				F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */,
+				F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */,
 				F832EAB829605A470063C979 /* StringExt.swift in Sources */,
 				F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
