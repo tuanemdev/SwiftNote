@@ -40,6 +40,7 @@
 		F8BF46F82956FEE6000D5ABA /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF46F72956FEE6000D5ABA /* NotificationService.swift */; };
 		F8BF46FC2956FEE6000D5ABA /* Payload Modification.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F8BF46F52956FEE6000D5ABA /* Payload Modification.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F8BF4702295715A6000D5ABA /* ROT13.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BF4701295715A6000D5ABA /* ROT13.swift */; };
+		F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234DE29D01A6800C512F4 /* OverlayView.swift */; };
 		F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C8C4692992CDC60048EF21 /* xcrun.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
@@ -128,6 +129,7 @@
 		F8BF46F92956FEE6000D5ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BF4701295715A6000D5ABA /* ROT13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ROT13.swift; sourceTree = "<group>"; };
 		F8BF471729572C20000D5ABA /* Payload Modification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Payload Modification.entitlements"; sourceTree = "<group>"; };
+		F8C234DE29D01A6800C512F4 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		F8C8C4692992CDC60048EF21 /* xcrun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcrun.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
@@ -382,6 +384,14 @@
 			path = "Payload Modification";
 			sourceTree = "<group>";
 		};
+		F8C234DD29D01A2300C512F4 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				F8C234DE29D01A6800C512F4 /* OverlayView.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
 		F8CD8D112931C43A00DCB3C0 = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +511,7 @@
 				F8E744772951EB1000AE3579 /* PushNotifications */,
 				F868019929C6A7B000D29E53 /* DeepLink */,
 				F8F1BCD929C36A72003BB6EB /* AppIcon */,
+				F8C234DD29D01A2300C512F4 /* Overlay */,
 				F843534629C4F2000007D0B1 /* Others */,
 			);
 			path = SwiftUI;
@@ -730,6 +741,7 @@
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
+				F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */,
 				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
 				F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */,
 				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,

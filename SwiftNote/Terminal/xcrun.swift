@@ -72,4 +72,7 @@
  xcrun simctl io booted screenshot ./simulator-screenshot_001.png
  xcrun simctl io "iPhone XS Max" screenshot ./simulator-screenshot_001.png
  
+ 16. Gửi push notification
+ xcrun simctl push <device> <bundle-identifier> <path-to-apns-file>
+ 
  */
