@@ -11,3 +11,10 @@ extension FloatingPoint {
     var degreesToRadians: Self { Self.pi * self / Self(180) }
     var radiansToDegrees: Self { self * Self(180) / Self.pi }
 }
+
+postfix operator %
+extension FloatingPoint {
+    static postfix func % (_ number: Self) -> Self {
+        number / 100
+    }
+}
