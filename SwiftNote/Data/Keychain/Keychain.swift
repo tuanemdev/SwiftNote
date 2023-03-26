@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Keychain {
+fileprivate class Keychain {
     
     static let serviceName: String = Bundle.main.bundleIdentifier!
     // MARK: - Singleton
@@ -157,3 +157,30 @@ class Keychain {
  DELETE:
  Keychain.standard.save(Optional<[String: String]>.none, account: "iOS Developer")
  */
+
+// MARK: - KeychainManager
+/*
+ Ưu điểm:
+ + Dễ dàng sử dụng và ép kiểu khi sử dụng Generic
+ + Thuận tiện khi thao tác thêm dữ liệu với Array, Dictionary,...
+ 
+ Nhược điểm:
+ + Khi sử dụng nên để class Keychain là fileprivate, tránh sử dụng 2 class có cùng chức năng
+ + Không handle được lỗi trả về (dưới dạng Bool) của các hàm trong class Keychain
+ */
+class KeychainManager {
+    
+    static let standard = KeychainManager()
+    private init() {}
+    
+    var iOSDevInfo: [String: String]? {
+        get { Keychain.standard.read(account: Key.iOSDevInfo) }
+        set { Keychain.standard.save(newValue, account: Key.iOSDevInfo) }
+    }
+}
+
+extension KeychainManager {
+    enum Key {
+        static let iOSDevInfo: String = "iOS Developer"
+    }
+}
