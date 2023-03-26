@@ -9,6 +9,6 @@ import SwiftUI
 
 extension View {
     func maskContent<Content: View>(_ using: Content) -> some View {
-        using.mask(self)
+        self.overlay { using.mask(self) }
     }
 }
