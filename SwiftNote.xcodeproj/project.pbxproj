@@ -399,10 +399,18 @@
 		F8C234E229D0460400C512F4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F8C234E729D089E700C512F4 /* PeelEffect */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		F8C234E729D089E700C512F4 /* PeelEffect */ = {
+			isa = PBXGroup;
+			children = (
 				F8C234E329D0467B00C512F4 /* PeelEffectView.swift */,
 				F8C234E529D04BBA00C512F4 /* PeelEffect.swift */,
 			);
-			path = Animations;
+			path = PeelEffect;
 			sourceTree = "<group>";
 		};
 		F8CD8D112931C43A00DCB3C0 = {

@@ -129,3 +129,11 @@ struct PeelEffect<Content: View>: View {
             }
     }
 }
+
+struct PeelEffect_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationStack {
+            PeelEffectView()
+        }
+    }
+}
