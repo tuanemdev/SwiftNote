@@ -55,6 +55,8 @@
 		F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */; };
 		F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */; };
 		F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */; };
+		F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDADA529D1CDA0003021C8 /* Fonts.swift */; };
+		F8DDADA829D1D06D003021C8 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DDADA729D1D06C003021C8 /* Pacifico.ttf */; };
 		F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744792951ECD700AE3579 /* AppDelegate.swift */; };
 		F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744B52951EFD800AE3579 /* SceneDelegate.swift */; };
 		F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744BB2951FD5400AE3579 /* PushNotifications.swift */; };
@@ -149,6 +151,8 @@
 		F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPicker.swift; sourceTree = "<group>"; };
 		F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundColor.swift; sourceTree = "<group>"; };
+		F8DDADA529D1CDA0003021C8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F8DDADA729D1D06C003021C8 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		F8E744792951ECD700AE3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8E744B52951EFD800AE3579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F8E744BB2951FD5400AE3579 /* PushNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotifications.swift; sourceTree = "<group>"; };
@@ -533,6 +537,7 @@
 				F8E744772951EB1000AE3579 /* PushNotifications */,
 				F868019929C6A7B000D29E53 /* DeepLink */,
 				F8F1BCD929C36A72003BB6EB /* AppIcon */,
+				F8DDADA429D1CD76003021C8 /* Fonts */,
 				F8C234DD29D01A2300C512F4 /* Overlay */,
 				F843534629C4F2000007D0B1 /* Others */,
 			);
@@ -608,6 +613,15 @@
 				F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */,
 			);
 			path = PhotosPicker;
+			sourceTree = "<group>";
+		};
+		F8DDADA429D1CD76003021C8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F8DDADA529D1CDA0003021C8 /* Fonts.swift */,
+				F8DDADA729D1D06C003021C8 /* Pacifico.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		F8E744772951EB1000AE3579 /* PushNotifications */ = {
@@ -728,6 +742,7 @@
 				F8E744BE29524C7600AE3579 /* payload.apns in Resources */,
 				F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */,
 				F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */,
+				F8DDADA829D1D06D003021C8 /* Pacifico.ttf in Resources */,
 				F8CD8D252931C43C00DCB3C0 /* Preview Assets.xcassets in Resources */,
 				F866F53E294ED916005FF046 /* Git.rtf in Resources */,
 				F832EAC729628E760063C979 /* LocalWebsite.html in Resources */,
@@ -770,6 +785,7 @@
 				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
+				F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */,
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
