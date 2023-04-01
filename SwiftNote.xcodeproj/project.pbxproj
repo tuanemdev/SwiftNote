@@ -55,6 +55,7 @@
 		F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */; };
 		F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */; };
 		F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */; };
+		F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5981C29D8774600315BDD /* ShimmerEffect.swift */; };
 		F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDADA529D1CDA0003021C8 /* Fonts.swift */; };
 		F8DDADA829D1D06D003021C8 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DDADA729D1D06C003021C8 /* Pacifico.ttf */; };
 		F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744792951ECD700AE3579 /* AppDelegate.swift */; };
@@ -151,6 +152,7 @@
 		F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPicker.swift; sourceTree = "<group>"; };
 		F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundColor.swift; sourceTree = "<group>"; };
+		F8D5981C29D8774600315BDD /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		F8DDADA529D1CDA0003021C8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F8DDADA729D1D06C003021C8 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		F8E744792951ECD700AE3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 		F8C234E229D0460400C512F4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F8D5981B29D875E800315BDD /* ShimmerEffect */,
 				F8C234E729D089E700C512F4 /* PeelEffect */,
 			);
 			path = Animations;
@@ -615,6 +618,14 @@
 			path = PhotosPicker;
 			sourceTree = "<group>";
 		};
+		F8D5981B29D875E800315BDD /* ShimmerEffect */ = {
+			isa = PBXGroup;
+			children = (
+				F8D5981C29D8774600315BDD /* ShimmerEffect.swift */,
+			);
+			path = ShimmerEffect;
+			sourceTree = "<group>";
+		};
 		F8DDADA429D1CD76003021C8 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -775,6 +786,7 @@
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
 				F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */,
 				F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */,
+				F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */,
 				F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
