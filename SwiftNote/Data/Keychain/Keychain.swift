@@ -51,7 +51,7 @@ fileprivate class Keychain {
             kSecReturnAttributes: true,
             kSecReturnData: true,
             kSecMatchLimit: kSecMatchLimitAll
-        ] as CFDictionary
+        ] as [CFString: Any] as CFDictionary
         
         var result: AnyObject?
         
@@ -78,7 +78,7 @@ fileprivate class Keychain {
         let query = [
             kSecClass: kSecClassGenericPassword,
             kSecAttrService: service
-        ] as CFDictionary
+        ] as [CFString: Any] as CFDictionary
         
         let status = SecItemDelete(query)
         return status == errSecSuccess
@@ -93,7 +93,7 @@ fileprivate class Keychain {
             kSecAttrService: service,
             kSecAttrAccount: account,
             kSecAttrAccessible: kSecAttrAccessibleAfterFirstUnlock
-        ] as CFDictionary
+        ] as [CFString: Any] as CFDictionary
         
         let status = SecItemAdd(query, nil)
         
@@ -104,7 +104,7 @@ fileprivate class Keychain {
                 kSecClass: kSecClassGenericPassword,
                 kSecAttrService: service,
                 kSecAttrAccount: account
-            ] as CFDictionary
+            ] as [CFString: Any] as CFDictionary
             let attributesToUpdate = [kSecValueData: data] as CFDictionary
             
             let status = SecItemUpdate(query, attributesToUpdate)
@@ -122,7 +122,7 @@ fileprivate class Keychain {
             kSecAttrAccount: account,
             kSecReturnData: true,
             kSecMatchLimit: kSecMatchLimitOne
-        ] as CFDictionary
+        ] as [CFString: Any] as CFDictionary
         
         var result: AnyObject?
         SecItemCopyMatching(query, &result)
@@ -136,7 +136,7 @@ fileprivate class Keychain {
             kSecClass: kSecClassGenericPassword,
             kSecAttrService: service,
             kSecAttrAccount: account
-        ] as CFDictionary
+        ] as [CFString: Any] as CFDictionary
         
         let status = SecItemDelete(query)
         return status == errSecSuccess
@@ -173,9 +173,15 @@ class KeychainManager {
     static let standard = KeychainManager()
     private init() {}
     
-    var iOSDevInfo: [String: String]? {
-        get { Keychain.standard.read(account: Key.iOSDevInfo) }
-        set { Keychain.standard.save(newValue, account: Key.iOSDevInfo) }
+    var iOSDevInfo: [String: String] {
+        get { Keychain.standard.read(account: Key.iOSDevInfo) ?? [:] }
+        set {
+            guard !newValue.isEmpty else {
+                Keychain.standard.save(Optional<[String: String]>.none, account: Key.iOSDevInfo)
+                return
+            }
+            Keychain.standard.save(newValue, account: Key.iOSDevInfo)
+        }
     }
 }
 
