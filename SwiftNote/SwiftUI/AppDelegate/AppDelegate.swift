@@ -10,6 +10,16 @@ import SwiftUI
 class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
     let notificationDelegate: NotificationDelegate = .init()
     
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        guard let topViewController = application.topViewController() else { return .allButUpsideDown }
+        switch topViewController {
+        case is ExampleViewController:
+            return .landscape
+        default:
+            return .allButUpsideDown
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         registerForPushNotifications(application)
         return true

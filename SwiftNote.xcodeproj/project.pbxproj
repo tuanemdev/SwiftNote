@@ -64,6 +64,7 @@
 		F8E744BE29524C7600AE3579 /* payload.apns in Resources */ = {isa = PBXBuildFile; fileRef = F8E744BD29524C7600AE3579 /* payload.apns */; };
 		F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C72980E03B0003A151 /* ArrayExt.swift */; };
 		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
+		F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */; };
 		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
 		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
 		F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */; };
@@ -161,6 +162,7 @@
 		F8E744BD29524C7600AE3579 /* payload.apns */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = payload.apns; sourceTree = "<group>"; };
 		F8E8A6C72980E03B0003A151 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		F8E8A6C92980F61B0003A151 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
+		F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		F8F1BCCF29C2EEC5003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD229C31338003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD629C328BA003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -531,6 +533,7 @@
 				F832EAB9296075FB0063C979 /* Components */,
 				F8BF46D32956C9FC000D5ABA /* NavigationStack */,
 				F8E744782951EC7800AE3579 /* AppDelegate */,
+				F8EBB97E29E5D5B6000A5C4D /* UIApplication */,
 				F866F519294D9A7B005FF046 /* Extension */,
 				F866F535294E21F9005FF046 /* Debugging */,
 				F8C234E229D0460400C512F4 /* Animations */,
@@ -651,6 +654,14 @@
 				F8E744B52951EFD800AE3579 /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		F8EBB97E29E5D5B6000A5C4D /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */,
+			);
+			path = UIApplication;
 			sourceTree = "<group>";
 		};
 		F8F1BCD929C36A72003BB6EB /* AppIcon */ = {
@@ -811,6 +822,7 @@
 				F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */,
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
 				F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */,
+				F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */,
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
