@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3BA29E97CE600231362 /* GIFImageView.swift */; };
+		F81BF3BD29E97D9B00231362 /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3BC29E97D9B00231362 /* GIFView.swift */; };
+		F81BF3BF29E9833000231362 /* how-i-study.gif in Resources */ = {isa = PBXBuildFile; fileRef = F81BF3BE29E9833000231362 /* how-i-study.gif */; };
+		F81BF3C329E98E4300231362 /* GIFWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3C229E98E4300231362 /* GIFWebView.swift */; };
 		F832EAB32960295B0063C979 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB22960295B0063C979 /* Bundle.swift */; };
 		F832EAB629602F270063C979 /* Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB529602F270063C979 /* Syntax.swift */; };
 		F832EAB829605A470063C979 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB729605A470063C979 /* StringExt.swift */; };
@@ -97,6 +101,10 @@
 /* Begin PBXFileReference section */
 		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F80D2D12294442FD007C6D1A /* LinkedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F81BF3BA29E97CE600231362 /* GIFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImageView.swift; sourceTree = "<group>"; };
+		F81BF3BC29E97D9B00231362 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
+		F81BF3BE29E9833000231362 /* how-i-study.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "how-i-study.gif"; sourceTree = "<group>"; };
+		F81BF3C229E98E4300231362 /* GIFWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFWebView.swift; sourceTree = "<group>"; };
 		F832EAB22960295B0063C979 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		F832EAB529602F270063C979 /* Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntax.swift; sourceTree = "<group>"; };
 		F832EAB729605A470063C979 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
@@ -202,6 +210,17 @@
 				F80D2D12294442FD007C6D1A /* LinkedLists.playground */,
 			);
 			path = LinkedLists;
+			sourceTree = "<group>";
+		};
+		F81BF3B929E97C2200231362 /* GIFView */ = {
+			isa = PBXGroup;
+			children = (
+				F81BF3BC29E97D9B00231362 /* GIFView.swift */,
+				F81BF3BA29E97CE600231362 /* GIFImageView.swift */,
+				F81BF3C229E98E4300231362 /* GIFWebView.swift */,
+				F81BF3BE29E9833000231362 /* how-i-study.gif */,
+			);
+			path = GIFView;
 			sourceTree = "<group>";
 		};
 		F832EAB12960291F0063C979 /* Bundle */ = {
@@ -540,6 +559,7 @@
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
 				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
+				F81BF3B929E97C2200231362 /* GIFView */,
 				F8E744772951EB1000AE3579 /* PushNotifications */,
 				F868019929C6A7B000D29E53 /* DeepLink */,
 				F8F1BCD929C36A72003BB6EB /* AppIcon */,
@@ -762,6 +782,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E744BE29524C7600AE3579 /* payload.apns in Resources */,
+				F81BF3BF29E9833000231362 /* how-i-study.gif in Resources */,
 				F8CD8D442931DABE00DCB3C0 /* URL.rtf in Resources */,
 				F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */,
 				F8DDADA829D1D06D003021C8 /* Pacifico.ttf in Resources */,
@@ -799,6 +820,7 @@
 				F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */,
 				F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */,
 				F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */,
+				F81BF3C329E98E4300231362 /* GIFWebView.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
@@ -823,7 +845,9 @@
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
 				F866F521294D9E36005FF046 /* ConditionalViewModifier.swift in Sources */,
 				F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */,
+				F81BF3BD29E97D9B00231362 /* GIFView.swift in Sources */,
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
+				F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */,
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F843534829C4F2390007D0B1 /* OthersView.swift in Sources */,
