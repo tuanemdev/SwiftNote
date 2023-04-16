@@ -48,6 +48,7 @@
 		F8C234E429D0467B00C512F4 /* PeelEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E329D0467B00C512F4 /* PeelEffectView.swift */; };
 		F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E529D04BBA00C512F4 /* PeelEffect.swift */; };
 		F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C8C4692992CDC60048EF21 /* xcrun.swift */; };
+		F8CCA18329EB9B20002DDA32 /* UIImageViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA18229EB9B20002DDA32 /* UIImageViewAnimation.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
 		F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */; };
 		F8CD8D222931C43C00DCB3C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8CD8D212931C43C00DCB3C0 /* Assets.xcassets */; };
@@ -147,6 +148,7 @@
 		F8C234E329D0467B00C512F4 /* PeelEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffectView.swift; sourceTree = "<group>"; };
 		F8C234E529D04BBA00C512F4 /* PeelEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffect.swift; sourceTree = "<group>"; };
 		F8C8C4692992CDC60048EF21 /* xcrun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcrun.swift; sourceTree = "<group>"; };
+		F8CCA18229EB9B20002DDA32 /* UIImageViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewAnimation.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNoteApp.swift; sourceTree = "<group>"; };
 		F8CD8D1F2931C43B00DCB3C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				F81BF3BC29E97D9B00231362 /* GIFView.swift */,
 				F81BF3BA29E97CE600231362 /* GIFImageView.swift */,
 				F81BF3C229E98E4300231362 /* GIFWebView.swift */,
+				F8CCA18229EB9B20002DDA32 /* UIImageViewAnimation.swift */,
 				F81BF3BE29E9833000231362 /* how-i-study.gif */,
 			);
 			path = GIFView;
@@ -829,6 +832,7 @@
 				F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */,
 				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
+				F8CCA18329EB9B20002DDA32 /* UIImageViewAnimation.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */,
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
