@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PhotosUI
+import AVKit
 
 // MARK: - @available(iOS 16, *)
 struct PhotosPickerView: View {
@@ -15,8 +16,13 @@ struct PhotosPickerView: View {
     @State private var isShowPicker: Bool = false
     @State private var uiImage: UIImage? = nil
     
+    // Cách sử dụng FileTransfer để giảm thiểu RAM cần sử dụng (ko lưu 1 biến data)
+    @State private var isShowVideoPicker: Bool = false
+    @State private var selectedVideo: PhotosPickerItem?
+    @State private var pickedVideoURL: URL?
+    
     var body: some View {
-        VStack {
+        VStack(spacing: 30) {
             PhotosPicker(selection: $selectedItem,
                          matching: .images,
                          photoLibrary: .shared()) { Text("Select a photo") }
@@ -44,9 +50,41 @@ struct PhotosPickerView: View {
             Button("Picker") {
                 isShowPicker = true
             }
+            
+            Button("Video Picker") {
+                isShowVideoPicker = true
+            }
+            if let pickedVideoURL {
+                VideoPlayer(player: .init(url: pickedVideoURL))
+            }
         }
         .sheet(isPresented: $isShowPicker) {
             ImagePicker(image: $uiImage) // OR CameraPicker(selectedImage: $uiImage)
+        }
+        .photosPicker(isPresented: $isShowVideoPicker, selection: $selectedVideo, matching: .videos)
+        .onChange(of: selectedVideo) { newValue in
+            guard let newValue else { return }
+            Task {
+                do {
+                    let pickedVideo = try await newValue.loadTransferable(type: VideoPickerTransferable.self)
+                    pickedVideoURL = pickedVideo?.videoURL
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+        .onDisappear {
+            deleteFile()
+        }
+    }
+    
+    private func deleteFile() {
+        guard let pickedVideoURL else { return }
+        do {
+            try FileManager.default.removeItem(at: pickedVideoURL)
+            self.pickedVideoURL = nil
+        } catch {
+            print(error.localizedDescription)
         }
     }
 }
@@ -143,6 +181,26 @@ struct CameraPicker: UIViewControllerRepresentable {
                 parent.selectedImage = image
             }
             parent.presentationMode.wrappedValue.dismiss()
+        }
+    }
+}
+
+/*
+ Tạo một custom Transferable
+ */
+struct VideoPickerTransferable: Transferable {
+    let videoURL: URL
+    static var transferRepresentation: some TransferRepresentation {
+        FileRepresentation(contentType: .video) { exportingFile in
+            return .init(exportingFile.videoURL)
+        } importing: { receivedTransferredFile in
+            let originalFile = receivedTransferredFile.file
+            let copiedFile = URL.documentsDirectory.appending(path: "videoPicker.mov")
+            if FileManager.default.fileExists(atPath: copiedFile.path()) {
+                try FileManager.default.removeItem(at: copiedFile)
+            }
+            try FileManager.default.copyItem(at: originalFile, to: copiedFile)
+            return .init(videoURL: copiedFile)
         }
     }
 }
