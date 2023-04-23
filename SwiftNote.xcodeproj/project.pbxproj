@@ -59,6 +59,7 @@
 		F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D492931EEBE00DCB3C0 /* UITextChecker.swift */; };
 		F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */; };
 		F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */; };
+		F8CEB77429FE29F800B1482B /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */; };
 		F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */; };
 		F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5981C29D8774600315BDD /* ShimmerEffect.swift */; };
 		F8D8564729F44A8C004B4877 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8564629F44A8C004B4877 /* UIColor.swift */; };
@@ -74,6 +75,9 @@
 		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
 		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
 		F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */; };
+		F8FCA1FE29F52B080045B33B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCA1FD29F52B080045B33B /* UIViewController.swift */; };
+		F8FCA20429F52D0B0045B33B /* UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCA20329F52D0B0045B33B /* UIScrollView.swift */; };
+		F8FCA20C29F598920045B33B /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FCA20B29F598920045B33B /* UIDevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +167,7 @@
 		F8CD8D492931EEBE00DCB3C0 /* UITextChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextChecker.swift; sourceTree = "<group>"; };
 		F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPicker.swift; sourceTree = "<group>"; };
+		F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
 		F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundColor.swift; sourceTree = "<group>"; };
 		F8D5981C29D8774600315BDD /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		F8D8564629F44A8C004B4877 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -180,6 +185,9 @@
 		F8F1BCD629C328BA003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8F1BCD829C328BD003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIconView.swift; sourceTree = "<group>"; };
+		F8FCA1FD29F52B080045B33B /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F8FCA20329F52D0B0045B33B /* UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollView.swift; sourceTree = "<group>"; };
+		F8FCA20B29F598920045B33B /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -658,7 +666,10 @@
 		F8D8564529F44A4D004B4877 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F8FCA1FD29F52B080045B33B /* UIViewController.swift */,
 				F8D8564629F44A8C004B4877 /* UIColor.swift */,
+				F8FCA20329F52D0B0045B33B /* UIScrollView.swift */,
+				F8FCA20B29F598920045B33B /* UIDevice.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -694,6 +705,7 @@
 			isa = PBXGroup;
 			children = (
 				F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */,
+				F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -831,6 +843,7 @@
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
 				F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */,
+				F8FCA20C29F598920045B33B /* UIDevice.swift in Sources */,
 				F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */,
 				F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */,
 				F84D36C62997EBFB00880ECD /* macCheatsheet.swift in Sources */,
@@ -839,6 +852,7 @@
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
+				F8CEB77429FE29F800B1482B /* DeviceOrientation.swift in Sources */,
 				F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */,
 				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
 				F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */,
@@ -847,11 +861,13 @@
 				F8CCA18329EB9B20002DDA32 /* UIImageViewAnimation.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */,
+				F8FCA20429F52D0B0045B33B /* UIScrollView.swift in Sources */,
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
+				F8FCA1FE29F52B080045B33B /* UIViewController.swift in Sources */,
 				F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */,
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
 				F832EAC42961A89A0063C979 /* WebView.swift in Sources */,
