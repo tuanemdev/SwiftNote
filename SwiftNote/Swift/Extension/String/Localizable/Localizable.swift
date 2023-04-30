@@ -60,3 +60,39 @@ final class UILocalizedButton: UIButton {
 }
 
 // Áp dụng tương tự cho các Components muốn localized thông qua IB
+
+// MARK: - Cách để cho người dùng chọn language không tự động ăn theo setting của máy
+enum Language: String, CaseIterable {
+    case english    = "en"
+    case vietnamese = "vi"
+    
+    static var current: Language {
+        get {
+            guard let languageCode = UserDefaults.standard.string(forKey: "languageCode"),
+                  let language = Language(rawValue: languageCode)
+            else { return .english }
+            return language
+        }
+        
+        set {
+            UserDefaults.standard.set(newValue.rawValue, forKey: "languageCode")
+        }
+    }
+}
+
+extension String {
+    // Hoặc sửa Extension localized(tableName:) phía trên nếu muốn kết hợp với việc chia nhỏ file Localizable
+    var localized: String {
+        let language = Language.current
+        let bundle: Bundle
+        
+        if let path = Bundle.main.path(forResource: language.rawValue, ofType: "lproj"),
+           let langBundle = Bundle(path: path) {
+            bundle = langBundle
+        } else {
+            bundle = Bundle.main
+        }
+        
+        return NSLocalizedString(self, tableName: nil, bundle: bundle, value: "**\(self)**", comment: "")
+    }
+}
