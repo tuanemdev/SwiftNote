@@ -60,6 +60,7 @@
 		F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */; };
 		F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */; };
 		F8CEB77429FE29F800B1482B /* DeviceOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */; };
+		F8CEB77729FE7BE300B1482B /* GoogleAdMob.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CEB77629FE7BE300B1482B /* GoogleAdMob.swift */; };
 		F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */; };
 		F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5981C29D8774600315BDD /* ShimmerEffect.swift */; };
 		F8D8564729F44A8C004B4877 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8564629F44A8C004B4877 /* UIColor.swift */; };
@@ -168,6 +169,7 @@
 		F8CD8D4C2931F79F00DCB3C0 /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosPicker.swift; sourceTree = "<group>"; };
 		F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceOrientation.swift; sourceTree = "<group>"; };
+		F8CEB77629FE7BE300B1482B /* GoogleAdMob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdMob.swift; sourceTree = "<group>"; };
 		F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundColor.swift; sourceTree = "<group>"; };
 		F8D5981C29D8774600315BDD /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		F8D8564629F44A8C004B4877 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -572,6 +574,7 @@
 				F8CD8D502932036800DCB3C0 /* PhotosPicker */,
 				F832EAC22961A83B0063C979 /* WebView */,
 				F8CD8D4B2931F76300DCB3C0 /* LottieView */,
+				F8CEB77529FE79B800B1482B /* GoogleAdMob */,
 				F81BF3B929E97C2200231362 /* GIFView */,
 				F8E744772951EB1000AE3579 /* PushNotifications */,
 				F868019929C6A7B000D29E53 /* DeepLink */,
@@ -653,6 +656,14 @@
 				F8CD8D512932038100DCB3C0 /* PhotosPicker.swift */,
 			);
 			path = PhotosPicker;
+			sourceTree = "<group>";
+		};
+		F8CEB77529FE79B800B1482B /* GoogleAdMob */ = {
+			isa = PBXGroup;
+			children = (
+				F8CEB77629FE7BE300B1482B /* GoogleAdMob.swift */,
+			);
+			path = GoogleAdMob;
 			sourceTree = "<group>";
 		};
 		F8D5981B29D875E800315BDD /* ShimmerEffect */ = {
@@ -853,6 +864,7 @@
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */,
 				F8CEB77429FE29F800B1482B /* DeviceOrientation.swift in Sources */,
+				F8CEB77729FE7BE300B1482B /* GoogleAdMob.swift in Sources */,
 				F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */,
 				F832EABB2960765C0063C979 /* SwiftCharts.swift in Sources */,
 				F843534A29C513A00007D0B1 /* UsefulWebsites.swift in Sources */,
