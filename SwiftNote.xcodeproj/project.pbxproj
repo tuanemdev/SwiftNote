@@ -11,6 +11,8 @@
 		F81BF3BD29E97D9B00231362 /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3BC29E97D9B00231362 /* GIFView.swift */; };
 		F81BF3BF29E9833000231362 /* how-i-study.gif in Resources */ = {isa = PBXBuildFile; fileRef = F81BF3BE29E9833000231362 /* how-i-study.gif */; };
 		F81BF3C329E98E4300231362 /* GIFWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3C229E98E4300231362 /* GIFWebView.swift */; };
+		F82E22EE2A0F15E6005ABD46 /* HighlightNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E22ED2A0F15E6005ABD46 /* HighlightNewView.swift */; };
+		F82E22F02A0F1F05005ABD46 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E22EF2A0F1F05005ABD46 /* Highlight.swift */; };
 		F832EAB32960295B0063C979 /* Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB22960295B0063C979 /* Bundle.swift */; };
 		F832EAB629602F270063C979 /* Syntax.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB529602F270063C979 /* Syntax.swift */; };
 		F832EAB829605A470063C979 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F832EAB729605A470063C979 /* StringExt.swift */; };
@@ -83,6 +85,7 @@
 		F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C72980E03B0003A151 /* ArrayExt.swift */; };
 		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
 		F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */; };
+		F8F054BF2A027804002F1EFE /* Vapor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F054BE2A027804002F1EFE /* Vapor.swift */; };
 		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
 		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
 		F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F1BCDA29C36B88003BB6EB /* AppIconView.swift */; };
@@ -122,6 +125,8 @@
 		F81BF3BC29E97D9B00231362 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
 		F81BF3BE29E9833000231362 /* how-i-study.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "how-i-study.gif"; sourceTree = "<group>"; };
 		F81BF3C229E98E4300231362 /* GIFWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFWebView.swift; sourceTree = "<group>"; };
+		F82E22ED2A0F15E6005ABD46 /* HighlightNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightNewView.swift; sourceTree = "<group>"; };
+		F82E22EF2A0F1F05005ABD46 /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
 		F832EAB22960295B0063C979 /* Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bundle.swift; sourceTree = "<group>"; };
 		F832EAB529602F270063C979 /* Syntax.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Syntax.swift; sourceTree = "<group>"; };
 		F832EAB729605A470063C979 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
@@ -202,6 +207,7 @@
 		F8E8A6C72980E03B0003A151 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		F8E8A6C92980F61B0003A151 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 		F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		F8F054BE2A027804002F1EFE /* Vapor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vapor.swift; sourceTree = "<group>"; };
 		F8F1BCCF29C2EEC5003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD229C31338003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD629C328BA003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -256,6 +262,15 @@
 				F81BF3BE29E9833000231362 /* how-i-study.gif */,
 			);
 			path = GIFView;
+			sourceTree = "<group>";
+		};
+		F82E22EC2A0F1519005ABD46 /* HighlightNew */ = {
+			isa = PBXGroup;
+			children = (
+				F82E22ED2A0F15E6005ABD46 /* HighlightNewView.swift */,
+				F82E22EF2A0F1F05005ABD46 /* Highlight.swift */,
+			);
+			path = HighlightNew;
 			sourceTree = "<group>";
 		};
 		F832EAB12960291F0063C979 /* Bundle */ = {
@@ -523,7 +538,7 @@
 				F8CD8D3D2931D74C00DCB3C0 /* Algorithm */,
 				F8CD8D3F2931D84A00DCB3C0 /* Data */,
 				F8CD8D3E2931D7D300DCB3C0 /* Knowledge */,
-				F8CD8D402931D8AE00DCB3C0 /* Vapor */,
+				F8F054BD2A0277D4002F1EFE /* Vapor */,
 			);
 			path = SwiftNote;
 			sourceTree = "<group>";
@@ -618,6 +633,7 @@
 				F8F1BCD929C36A72003BB6EB /* AppIcon */,
 				F8DDADA429D1CD76003021C8 /* Fonts */,
 				F8C234DD29D01A2300C512F4 /* Overlay */,
+				F82E22EC2A0F1519005ABD46 /* HighlightNew */,
 				F843534629C4F2000007D0B1 /* Others */,
 				F8D8564529F44A4D004B4877 /* UIKit */,
 			);
@@ -662,13 +678,6 @@
 				F89216D329CF49EA000900D0 /* Keychain */,
 			);
 			path = Data;
-			sourceTree = "<group>";
-		};
-		F8CD8D402931D8AE00DCB3C0 /* Vapor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vapor;
 			sourceTree = "<group>";
 		};
 		F8CD8D452931DDBD00DCB3C0 /* URL */ = {
@@ -757,6 +766,14 @@
 				F8CEB77329FE29F800B1482B /* DeviceOrientation.swift */,
 			);
 			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		F8F054BD2A0277D4002F1EFE /* Vapor */ = {
+			isa = PBXGroup;
+			children = (
+				F8F054BE2A027804002F1EFE /* Vapor.swift */,
+			);
+			path = Vapor;
 			sourceTree = "<group>";
 		};
 		F8F1BCD929C36A72003BB6EB /* AppIcon */ = {
@@ -931,6 +948,7 @@
 				F866F51D294D9B90005FF046 /* GeometryProxyExt.swift in Sources */,
 				F832EAC42961A89A0063C979 /* WebView.swift in Sources */,
 				F866F537294E22E5005FF046 /* Logger.swift in Sources */,
+				F82E22F02A0F1F05005ABD46 /* Highlight.swift in Sources */,
 				F832EAB32960295B0063C979 /* Bundle.swift in Sources */,
 				F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */,
 				F866F534294DFF00005FF046 /* MaskContent.swift in Sources */,
@@ -938,9 +956,11 @@
 				F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */,
 				F81BF3BD29E97D9B00231362 /* GIFView.swift in Sources */,
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
+				F82E22EE2A0F15E6005ABD46 /* HighlightNewView.swift in Sources */,
 				F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */,
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
+				F8F054BF2A027804002F1EFE /* Vapor.swift in Sources */,
 				F8A3DBF429FEE0570050D15A /* APIRequest.swift in Sources */,
 				F843534829C4F2390007D0B1 /* OthersView.swift in Sources */,
 				F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */,
@@ -1104,7 +1124,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1160,7 +1180,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1189,6 +1209,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1221,6 +1242,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,6 +8,8 @@
 // MARK: - Mac Terminal Commands
 /*
  Link thao khảo: https://github.com/0nn0/terminal-mac-cheatsheet/tree/master/Ti%E1%BA%BFng%20Vi%E1%BB%87t
+ open .     mở folder hiện tại
+ pwd        lấy path của folder hiện tại
  */
 
 // MARK: - Homebrew
