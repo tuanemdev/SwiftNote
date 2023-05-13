@@ -14,7 +14,9 @@ struct CustomTabbarView: View {
     @Namespace private var animation
     @State private var tabItemPosition: CGPoint = .zero
     
-    init() { UITabBar.appearance().isHidden = true } // Fix Bug in iOS 16
+    /// Fix Bug SwiftUI in iOS 16, TabBar sẽ ngẫu nhiên hiển thị khi chuyển giữa các tab
+    /// Nếu dùng hàm này thì không cần sử dụng .toolbar(.hidden, for: .tabBar)
+    init() { UITabBar.appearance().isHidden = true }
     
     var body: some View {
         VStack(spacing: 0) {
