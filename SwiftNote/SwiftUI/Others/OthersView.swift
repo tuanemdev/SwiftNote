@@ -10,6 +10,7 @@ import SwiftUI
 struct OthersView: View {
     var body: some View {
         Text("^[\(3) Person](inflect: true)")
+            .preferredColorScheme(.dark)
     }
 }
 
