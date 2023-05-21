@@ -47,6 +47,12 @@
 		F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868019A29C6A7DE00D29E53 /* DeepLink.swift */; };
 		F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86CD45529990D2F00D3CA44 /* PropertyList.swift */; };
 		F87D1F712A18D93E00F3FBBD /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */; };
+		F87D1F742A1A0ED600F3FBBD /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F732A1A0ED600F3FBBD /* CoreData.swift */; };
+		F87D1F772A1A190700F3FBBD /* Item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F752A1A190700F3FBBD /* Item.xcdatamodeld */; };
+		F87D1F7A2A1A203500F3FBBD /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F782A1A203500F3FBBD /* Item+CoreDataClass.swift */; };
+		F87D1F7B2A1A203500F3FBBD /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F792A1A203500F3FBBD /* Item+CoreDataProperties.swift */; };
+		F88AFA902A1D0D6D00E2A707 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AFA8F2A1D0D6D00E2A707 /* PersistenceController.swift */; };
+		F88AFA922A1D238300E2A707 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AFA912A1D238300E2A707 /* CoreDataView.swift */; };
 		F89216D529CF4A19000900D0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89216D429CF4A19000900D0 /* Keychain.swift */; };
 		F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */; };
 		F8A3DBEF29FEDBD20050D15A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */; };
@@ -66,6 +72,7 @@
 		F8C234DF29D01A6800C512F4 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234DE29D01A6800C512F4 /* OverlayView.swift */; };
 		F8C234E429D0467B00C512F4 /* PeelEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E329D0467B00C512F4 /* PeelEffectView.swift */; };
 		F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C234E529D04BBA00C512F4 /* PeelEffect.swift */; };
+		F8C835B22A1F8AF6003F9A2E /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C835B12A1F8AF6003F9A2E /* QRCode.swift */; };
 		F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C8C4692992CDC60048EF21 /* xcrun.swift */; };
 		F8CCA18329EB9B20002DDA32 /* UIImageViewAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CCA18229EB9B20002DDA32 /* UIImageViewAnimation.swift */; };
 		F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8CD8D1D2931C43B00DCB3C0 /* SwiftNoteApp.swift */; };
@@ -169,6 +176,12 @@
 		F868019A29C6A7DE00D29E53 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		F86CD45529990D2F00D3CA44 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
 		F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
+		F87D1F732A1A0ED600F3FBBD /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		F87D1F762A1A190700F3FBBD /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
+		F87D1F782A1A203500F3FBBD /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F87D1F792A1A203500F3FBBD /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F88AFA8F2A1D0D6D00E2A707 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		F88AFA912A1D238300E2A707 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		F89216D429CF4A19000900D0 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestExample.swift; sourceTree = "<group>"; };
 		F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -192,6 +205,7 @@
 		F8C234DE29D01A6800C512F4 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		F8C234E329D0467B00C512F4 /* PeelEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffectView.swift; sourceTree = "<group>"; };
 		F8C234E529D04BBA00C512F4 /* PeelEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeelEffect.swift; sourceTree = "<group>"; };
+		F8C835B12A1F8AF6003F9A2E /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
 		F8C8C4692992CDC60048EF21 /* xcrun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xcrun.swift; sourceTree = "<group>"; };
 		F8CCA18229EB9B20002DDA32 /* UIImageViewAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewAnimation.swift; sourceTree = "<group>"; };
 		F8CD8D1A2931C43B00DCB3C0 /* SwiftNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -365,6 +379,7 @@
 			children = (
 				F843534729C4F2390007D0B1 /* OthersView.swift */,
 				F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */,
+				F8C835B12A1F8AF6003F9A2E /* QRCode.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -464,6 +479,19 @@
 				F86CD45529990D2F00D3CA44 /* PropertyList.swift */,
 			);
 			path = PropertyWrappers;
+			sourceTree = "<group>";
+		};
+		F87D1F722A1A0E9C00F3FBBD /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				F88AFA912A1D238300E2A707 /* CoreDataView.swift */,
+				F88AFA8F2A1D0D6D00E2A707 /* PersistenceController.swift */,
+				F87D1F782A1A203500F3FBBD /* Item+CoreDataClass.swift */,
+				F87D1F792A1A203500F3FBBD /* Item+CoreDataProperties.swift */,
+				F87D1F752A1A190700F3FBBD /* Item.xcdatamodeld */,
+				F87D1F732A1A0ED600F3FBBD /* CoreData.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		F89216D329CF49EA000900D0 /* Keychain */ = {
@@ -712,6 +740,7 @@
 			children = (
 				F8BD173229C891DA0047B844 /* UserDefaults */,
 				F89216D329CF49EA000900D0 /* Keychain */,
+				F87D1F722A1A0E9C00F3FBBD /* CoreData */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -943,10 +972,12 @@
 			files = (
 				F82E22F72A0F7089005ABD46 /* TabItemShape.swift in Sources */,
 				F8A3DBFA29FEE23F0050D15A /* APIManager.swift in Sources */,
+				F88AFA922A1D238300E2A707 /* CoreDataView.swift in Sources */,
 				F8C234E429D0467B00C512F4 /* PeelEffectView.swift in Sources */,
 				F866F51F294D9D03005FF046 /* RoundedCorner.swift in Sources */,
 				F8CD8D202931C43B00DCB3C0 /* ContentView.swift in Sources */,
 				F82E22F32A0F63A4005ABD46 /* CustomTabbarView.swift in Sources */,
+				F87D1F772A1A190700F3FBBD /* Item.xcdatamodeld in Sources */,
 				F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */,
 				F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */,
 				F8FCA20C29F598920045B33B /* UIDevice.swift in Sources */,
@@ -959,6 +990,7 @@
 				F84F21A92A1557E700DCB21C /* AsyncImageView.swift in Sources */,
 				F866F53B294ED276005FF046 /* LLDBView.swift in Sources */,
 				F8A3DC0029FEE8790050D15A /* APIToken.swift in Sources */,
+				F88AFA902A1D0D6D00E2A707 /* PersistenceController.swift in Sources */,
 				F832EAC9296292B70063C979 /* WebViewModel.swift in Sources */,
 				F8A3DBFE29FEE5440050D15A /* AccessTokenManager.swift in Sources */,
 				F8A3DBFC29FEE3AE0050D15A /* RequestManager.swift in Sources */,
@@ -981,6 +1013,8 @@
 				F832EAB629602F270063C979 /* Syntax.swift in Sources */,
 				F866F52C294DB82C005FF046 /* BoolExt.swift in Sources */,
 				F8CD8D322931CC7300DCB3C0 /* Localizable.swift in Sources */,
+				F87D1F742A1A0ED600F3FBBD /* CoreData.swift in Sources */,
+				F87D1F7B2A1A203500F3FBBD /* Item+CoreDataProperties.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
@@ -1009,9 +1043,11 @@
 				F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */,
 				F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */,
 				F82E22F52A0F63CF005ABD46 /* TabItem.swift in Sources */,
+				F87D1F7A2A1A203500F3FBBD /* Item+CoreDataClass.swift in Sources */,
 				F832EAB829605A470063C979 /* StringExt.swift in Sources */,
 				F832EAC1296139810063C979 /* FixedInnerHeight.swift in Sources */,
 				F8CD8D4A2931EEBE00DCB3C0 /* UITextChecker.swift in Sources */,
+				F8C835B22A1F8AF6003F9A2E /* QRCode.swift in Sources */,
 				F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */,
 				F8BD173429C892E30047B844 /* UserDefaults.swift in Sources */,
 				F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */,
@@ -1331,6 +1367,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F87D1F752A1A190700F3FBBD /* Item.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F87D1F762A1A190700F3FBBD /* Item.xcdatamodel */,
+			);
+			currentVersion = F87D1F762A1A190700F3FBBD /* Item.xcdatamodel */;
+			path = Item.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F8CD8D122931C43A00DCB3C0 /* Project object */;
 }

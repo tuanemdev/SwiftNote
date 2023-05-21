@@ -25,15 +25,15 @@ struct SwiftCharts_Previews: PreviewProvider {
     }
 }
 
-struct Item: Identifiable {
+struct ProductItem: Identifiable {
     let name: String
     let cost: Int
     var id: String { name }
 }
 
-let itemsData: [Item] = [
-    Item(name: "Ahihi", cost: 25),
-    Item(name: "Do Ngoc", cost: 30),
-    Item(name: "Code iOS", cost: 45),
-    Item(name: "No Name", cost: 20)
+let itemsData: [ProductItem] = [
+    ProductItem(name: "Ahihi", cost: 25),
+    ProductItem(name: "Do Ngoc", cost: 30),
+    ProductItem(name: "Code iOS", cost: 45),
+    ProductItem(name: "No Name", cost: 20)
 ]
