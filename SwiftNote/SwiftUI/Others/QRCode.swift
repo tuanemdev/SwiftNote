@@ -32,6 +32,16 @@ struct QRCode: View {
         let filter = CIFilter.qrCodeGenerator()
         filter.message = Data(string.utf8)
         
+        /// Similarly
+        let barFilter = CIFilter.code128BarcodeGenerator()
+        barFilter.message = Data(string.utf8)
+        
+        let pdfFilter = CIFilter.pdf417BarcodeGenerator()
+        pdfFilter.message = Data(string.utf8)
+        
+        let aztecFilter = CIFilter.aztecCodeGenerator()
+        aztecFilter.message = Data(string.utf8)
+        
         guard let outputImage = filter.outputImage,
               let tintedImage = outputImage.tinted(using: UIColor(tintColor)),
               let cgImage = context.createCGImage(tintedImage, from: tintedImage.extent)
@@ -127,4 +137,6 @@ extension CIImage {
  let cgLogo = logo?.cgImage
  let ciLogo = CIImage(cgImage: cgLogo)
  Thêm vào hàm generateQRCode đẻ sử dụng
+ 
+ 4. Đối với Barcode thì sẽ chỉ nhận các ký tự thông thường: bảng chữ cái tiếng anh và số. Nếu không thì CIFilter.outputImage sẽ trả về nil
  */
