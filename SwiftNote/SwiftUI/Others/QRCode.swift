@@ -140,3 +140,45 @@ extension CIImage {
  
  4. Đối với Barcode thì sẽ chỉ nhận các ký tự thông thường: bảng chữ cái tiếng anh và số. Nếu không thì CIFilter.outputImage sẽ trả về nil
  */
+
+/// Cách tiếp cận khác
+extension Image {
+    
+    enum BarCode {
+        case qrCode
+        case code128Barcode
+        case pdf417Barcode
+        case aztecCode
+    }
+    
+    init(code: String, _ type: BarCode) {
+        let context = CIContext()
+        let filter: CIFilter
+        switch type {
+        case .qrCode:
+            let aFilter = CIFilter.qrCodeGenerator()
+            aFilter.message = Data(code.utf8)
+            filter = aFilter
+        case .code128Barcode:
+            let aFilter = CIFilter.code128BarcodeGenerator()
+            aFilter.message = Data(code.utf8)
+            filter = aFilter
+        case .pdf417Barcode:
+            let aFilter = CIFilter.pdf417BarcodeGenerator()
+            aFilter.message = Data(code.utf8)
+            filter = aFilter
+        case .aztecCode:
+            let aFilter = CIFilter.aztecCodeGenerator()
+            aFilter.message = Data(code.utf8)
+            filter = aFilter
+        }
+        
+        if let ciImage = filter.outputImage,
+           let cgImage = context.createCGImage(ciImage, from: ciImage.extent) {
+            self.init(cgImage, scale: 1, label: Text("BarCode"))
+        } else {
+            self.init(systemName: "xmark.circle")
+        }
+        
+    }
+}
