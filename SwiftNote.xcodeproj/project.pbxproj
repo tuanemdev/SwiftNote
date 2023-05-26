@@ -12,6 +12,7 @@
 		F81BF3BF29E9833000231362 /* how-i-study.gif in Resources */ = {isa = PBXBuildFile; fileRef = F81BF3BE29E9833000231362 /* how-i-study.gif */; };
 		F81BF3C329E98E4300231362 /* GIFWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3C229E98E4300231362 /* GIFWebView.swift */; };
 		F82402472A151A6900DA3219 /* AppURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82402462A151A6900DA3219 /* AppURL.swift */; };
+		F82A7D282A20DCA9004DB6E8 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82A7D272A20DCA9004DB6E8 /* QRScannerView.swift */; };
 		F82E22EE2A0F15E6005ABD46 /* HighlightNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E22ED2A0F15E6005ABD46 /* HighlightNewView.swift */; };
 		F82E22F02A0F1F05005ABD46 /* Highlight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E22EF2A0F1F05005ABD46 /* Highlight.swift */; };
 		F82E22F32A0F63A4005ABD46 /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F82E22F22A0F63A4005ABD46 /* CustomTabbarView.swift */; };
@@ -140,6 +141,7 @@
 		F81BF3BE29E9833000231362 /* how-i-study.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "how-i-study.gif"; sourceTree = "<group>"; };
 		F81BF3C229E98E4300231362 /* GIFWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFWebView.swift; sourceTree = "<group>"; };
 		F82402462A151A6900DA3219 /* AppURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppURL.swift; sourceTree = "<group>"; };
+		F82A7D272A20DCA9004DB6E8 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		F82E22ED2A0F15E6005ABD46 /* HighlightNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlightNewView.swift; sourceTree = "<group>"; };
 		F82E22EF2A0F1F05005ABD46 /* Highlight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Highlight.swift; sourceTree = "<group>"; };
 		F82E22F22A0F63A4005ABD46 /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 				F843534729C4F2390007D0B1 /* OthersView.swift */,
 				F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */,
 				F8C835B12A1F8AF6003F9A2E /* QRCode.swift */,
+				F82A7D272A20DCA9004DB6E8 /* QRScannerView.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -1054,6 +1057,7 @@
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 				F866F525294DA192005FF046 /* BindingExt.swift in Sources */,
 				F89216D529CF4A19000900D0 /* Keychain.swift in Sources */,
+				F82A7D282A20DCA9004DB6E8 /* QRScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1284,11 +1288,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftNote/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need to scan QR code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1317,11 +1322,12 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftNote/Info.plist;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need to scan QR code";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
