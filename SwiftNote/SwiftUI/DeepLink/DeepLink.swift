@@ -61,22 +61,46 @@
  Tải file json như mô tả phía dưới lên máy chủ web
  
  Xử lý
- Trong AppDelegate:
+ + Trong SwiftUI: .onOpenURL { incomingURL in }
+ + Trong AppDelegate:
     func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
         if userActivity.activityType == NSUserActivityTypeBrowsingWeb {
             print(userActivity.webpageURL!)
         }
     }
+ + Trong SceneDelegate:
+    Khi App đang không chạy:
+        func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+            let url = connectionOptions.urlContexts.first?.url
+        }
+    Khi App đang chạy hoặc bị suspended:
+        func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+            let url = URLContexts.first?.url
+        }
+        HOẶC
+        func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
+            let url = userActivity.webpageURL
+        }
  */
 
 /*
  file json phía web: https://tuanem.com/apple-app-site-association có định dạng mẫu như sau:
  {
     "applinks": {
+       "substitutionVariables": {
+          "food": [ "burrito", "shawarma", "sushi" ]
+       },
        "details": [
             {
               "appIDs": [ "ABCDE12345.com.example.app", "ABCDE12345.com.example.app2" ],
+              "defaults": {
+                 "caseSensitive": false,
+                 "percentEncoded": false
+              },
               "components": [
+                {
+                   "/": "/$(lang)_$(region)/$(food)/"
+                },
                 {
                    "#": "no_universal_links",
                    "exclude": true,
@@ -84,7 +108,9 @@
                 },
                 {
                    "/": "/buy/*",
-                   "comment": "Matches any URL with a path that starts with /buy/."
+                   "comment": "Matches any URL with a path that starts with /buy/.",
+                   "caseSensitive": false,
+                   "percentEncoded": false
                 },
                 {
                    "/": "/help/website/*",
@@ -106,4 +132,41 @@
          ]
      }
  }
+                               
++ key default: sử dụng để định nghĩa giá trị mặc định cho tất cả các components, ở trên vẫn giữ 2 key được gán giá trị mặc định trong components chỉ để làm ví dụ chứ không cần thiết nữa
++ key default: có thể đưa lên đứng ngang hàng với key details nếu muốn áp dụng cho tất cả các item Universal Link
++ key exclude: để định nghĩa link đó có được mở như 1 universal link hay không
++ key caseSensitive: phân biệt chữ hoa chữ thường, để không phân biệt đặt giá trị này về false
++ key percentEncoded: thông thường các ký tự trong url chỉ là ASCII, muốn hỗ trợ cả ký tự unicode đặt giá trị này về false
++ key substitutionVariables: Các ký tự được hỗ trợ:
+        $(alpha): ký tự chữ cái không phân biệt hoa thường
+        $(upper), $(lower): ký tự chữ cái viết hoa, viết thường
+        $(alnum): ký tự chữ cái không phân biệt hoa thường và chữ số từ 0 đến 9
+        $(digit): số từ 0 đến 9 (hệ thập phân)
+        $(xdigit): các ký tự trong hệ thập lục phân
+        $(region): mã vùng theo tiêu chuẩn ISO
+        $(lang): mã ngôn ngữ theo tiêu chuẩn ISO
 */*/*/*/
+
+/*
+ https://tuanem.com/.well-known/apple-app-site-association đưa vào .well-known nếu hỗ trợ chế độ Developer mode hoặc Managed mode
+ mặc định sẽ là CDN mode
+ 
+ Cách hoạt động của Universal Link
+ - Tải App từ trên Appstore
+ - iOS sẽ check nếu App có domain hỗ trợ trong file .entitlements, hệ thống sẽ kết nối tới server Apple CDN để tải thông tin cần thiết về (thông tin trong file json) (từ iOS 14)
+ + không kết nối trực tiếp tới server web chủ sở hữu như trước đây, Apple CDN sẽ tải, cập nhật và cache file json từ server web chủ sở hữu thay thế)
+ + kết nối tới server web trực tiếp trong trường hợp đang phát triển (Developer mode) hoặc App lưu hành nội bộ, máy MDM (Managed mode)
+   hoặc phía server web là server nội bộ nên Apple CDN không thể kết nối tới
+ 
+ Bật chế độ phát triển đối với thiết bị muốn dùng Associated Domains Development
+ Với iOS: bật Associated Domains Development trong mục Developer app Settings
+ Với macOS: mở terminal gõ: swcutil developer-mode -e true
+ 
+ Về cài đặt phía App
+ Thay vì chế độ mặc định CDN link được định nghĩa là: applinks:www.tuanem.com
+ Thì với chế độ Developer mode hoặc Managed mode, link sẽ được định nghĩa khác đi để báo với hệ thống App này muốn sử dụng server web thay vì Apple CDN
+ applinks:www.tuanem.com?mode=developer
+ applinks:www.tuanem.com?mode=managed
+ applinks:www.tuanem.com?mode=developer+managed
+ */
