@@ -85,8 +85,10 @@
 
 /*
  file json phía web: https://tuanem.com/apple-app-site-association có định dạng mẫu như sau:
+ Lưu ý: file json có tên là apple-app-site-association và không có phần mở rộng (.json)
  {
     "applinks": {
+       "apps": [],
        "substitutionVariables": {
           "food": [ "burrito", "shawarma", "sushi" ]
        },

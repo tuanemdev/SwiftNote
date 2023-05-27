@@ -31,6 +31,7 @@ struct QRCode: View {
         let context = CIContext()
         let filter = CIFilter.qrCodeGenerator()
         filter.message = Data(string.utf8)
+        filter.setValue("H", forKey: "inputCorrectionLevel") /// L: 7%, M: 15%, Q: 25%, H: 30% (tính năng tự sửa lỗi của mã QR) (default value: M)
         
         /// Similarly
         let barFilter = CIFilter.code128BarcodeGenerator()
@@ -42,7 +43,13 @@ struct QRCode: View {
         let aztecFilter = CIFilter.aztecCodeGenerator()
         aztecFilter.message = Data(string.utf8)
         
-        guard let outputImage = filter.outputImage,
+        let transform = CGAffineTransform(scaleX: 100, y: 100) /// Sử dụng để tăng độ phân giải của hình ảnh, mặc định sẽ chỉ dùng 1px cho mỗi điểm của QR
+        /// Nếu chỉ để hiển thị thì không cần thiết dùng đến vì đã sử dụng .interpolation(.none), tuy nhiên mục đích chính của việc này là lấy một UIImage độ phân giải cao lưu vào thư viện ảnh
+        /// Ngoài cách set cố định thì có thể tính toán hiển thị dựa trên size của hình ảnh cần hiển thị (Không cần thiết với SwiftUI vì đã có .interpolation(.none))
+        /// guard let qrImage = filter.outputImage else { return UIImage() }
+        /// let scaleX = imageView.frame.size.width / qrImage.extent.size.width
+        /// let scaleY = imageView.frame.size.height / qrImage.extent.size.height
+        guard let outputImage = filter.outputImage?.transformed(by: transform),
               let tintedImage = outputImage.tinted(using: UIColor(tintColor)),
               let cgImage = context.createCGImage(tintedImage, from: tintedImage.extent)
         else { return UIImage(systemName: "xmark.circle") ?? UIImage() }

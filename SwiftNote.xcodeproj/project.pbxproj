@@ -55,6 +55,8 @@
 		F88AFA902A1D0D6D00E2A707 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AFA8F2A1D0D6D00E2A707 /* PersistenceController.swift */; };
 		F88AFA922A1D238300E2A707 /* CoreDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88AFA912A1D238300E2A707 /* CoreDataView.swift */; };
 		F89216D529CF4A19000900D0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89216D429CF4A19000900D0 /* Keychain.swift */; };
+		F89F571D2A21D7BE0026FC86 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89F571C2A21D7BE0026FC86 /* Snapshot.swift */; };
+		F89F57202A21E02E0026FC86 /* AnimationCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89F571F2A21E02E0026FC86 /* AnimationCompletion.swift */; };
 		F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */; };
 		F8A3DBEF29FEDBD20050D15A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */; };
 		F8A3DBF229FEDC790050D15A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBF129FEDC790050D15A /* NetworkError.swift */; };
@@ -185,6 +187,8 @@
 		F88AFA8F2A1D0D6D00E2A707 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		F88AFA912A1D238300E2A707 /* CoreDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataView.swift; sourceTree = "<group>"; };
 		F89216D429CF4A19000900D0 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		F89F571C2A21D7BE0026FC86 /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
+		F89F571F2A21E02E0026FC86 /* AnimationCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCompletion.swift; sourceTree = "<group>"; };
 		F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestExample.swift; sourceTree = "<group>"; };
 		F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		F8A3DBF129FEDC790050D15A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -383,6 +387,7 @@
 				F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */,
 				F8C835B12A1F8AF6003F9A2E /* QRCode.swift */,
 				F82A7D272A20DCA9004DB6E8 /* QRScannerView.swift */,
+				F89F571C2A21D7BE0026FC86 /* Snapshot.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -505,6 +510,14 @@
 			path = Keychain;
 			sourceTree = "<group>";
 		};
+		F89F571E2A21E0030026FC86 /* AnimationCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				F89F571F2A21E02E0026FC86 /* AnimationCompletion.swift */,
+			);
+			path = AnimationCompletion;
+			sourceTree = "<group>";
+		};
 		F8A3DBEB29FECC010050D15A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +573,7 @@
 		F8C234E229D0460400C512F4 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				F89F571E2A21E0030026FC86 /* AnimationCompletion */,
 				F8D5981B29D875E800315BDD /* ShimmerEffect */,
 				F8C234E729D089E700C512F4 /* PeelEffect */,
 			);
@@ -1007,7 +1021,9 @@
 				F832EACD296294CB0063C979 /* SpinCircleLoader.swift in Sources */,
 				F866F52E294DBA1F005FF046 /* FloatingPointExt.swift in Sources */,
 				F82402472A151A6900DA3219 /* AppURL.swift in Sources */,
+				F89F57202A21E02E0026FC86 /* AnimationCompletion.swift in Sources */,
 				F8CCA18329EB9B20002DDA32 /* UIImageViewAnimation.swift in Sources */,
+				F89F571D2A21D7BE0026FC86 /* Snapshot.swift in Sources */,
 				F8E744BC2951FD5400AE3579 /* PushNotifications.swift in Sources */,
 				F8A3DBEF29FEDBD20050D15A /* HTTPMethod.swift in Sources */,
 				F8A3DBF829FEE1350050D15A /* DataParser.swift in Sources */,
