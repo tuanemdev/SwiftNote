@@ -47,6 +47,7 @@
 		F866F53E294ED916005FF046 /* Git.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F866F53D294ED916005FF046 /* Git.rtf */; };
 		F868019B29C6A7DE00D29E53 /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = F868019A29C6A7DE00D29E53 /* DeepLink.swift */; };
 		F86CD45629990D2F00D3CA44 /* PropertyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F86CD45529990D2F00D3CA44 /* PropertyList.swift */; };
+		F87C80562A23AE39002E9C72 /* WWDC2022View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87C80552A23AE39002E9C72 /* WWDC2022View.swift */; };
 		F87D1F712A18D93E00F3FBBD /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */; };
 		F87D1F742A1A0ED600F3FBBD /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F732A1A0ED600F3FBBD /* CoreData.swift */; };
 		F87D1F772A1A190700F3FBBD /* Item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F87D1F752A1A190700F3FBBD /* Item.xcdatamodeld */; };
@@ -57,6 +58,7 @@
 		F89216D529CF4A19000900D0 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89216D429CF4A19000900D0 /* Keychain.swift */; };
 		F89F571D2A21D7BE0026FC86 /* Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89F571C2A21D7BE0026FC86 /* Snapshot.swift */; };
 		F89F57202A21E02E0026FC86 /* AnimationCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89F571F2A21E02E0026FC86 /* AnimationCompletion.swift */; };
+		F89F57222A234C120026FC86 /* UIControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F89F57212A234C120026FC86 /* UIControl.swift */; };
 		F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */; };
 		F8A3DBEF29FEDBD20050D15A /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */; };
 		F8A3DBF229FEDC790050D15A /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3DBF129FEDC790050D15A /* NetworkError.swift */; };
@@ -179,6 +181,7 @@
 		F866F53D294ED916005FF046 /* Git.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Git.rtf; sourceTree = "<group>"; };
 		F868019A29C6A7DE00D29E53 /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
 		F86CD45529990D2F00D3CA44 /* PropertyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyList.swift; sourceTree = "<group>"; };
+		F87C80552A23AE39002E9C72 /* WWDC2022View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WWDC2022View.swift; sourceTree = "<group>"; };
 		F87D1F702A18D93E00F3FBBD /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		F87D1F732A1A0ED600F3FBBD /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		F87D1F762A1A190700F3FBBD /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
@@ -189,6 +192,7 @@
 		F89216D429CF4A19000900D0 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		F89F571C2A21D7BE0026FC86 /* Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapshot.swift; sourceTree = "<group>"; };
 		F89F571F2A21E02E0026FC86 /* AnimationCompletion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationCompletion.swift; sourceTree = "<group>"; };
+		F89F57212A234C120026FC86 /* UIControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIControl.swift; sourceTree = "<group>"; };
 		F8A3DBEC29FECC250050D15A /* APIRequestExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestExample.swift; sourceTree = "<group>"; };
 		F8A3DBEE29FEDBD20050D15A /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		F8A3DBF129FEDC790050D15A /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -489,6 +493,22 @@
 			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
+		F87C80532A23AD74002E9C72 /* WWDC */ = {
+			isa = PBXGroup;
+			children = (
+				F87C80542A23AD95002E9C72 /* 2022 */,
+			);
+			path = WWDC;
+			sourceTree = "<group>";
+		};
+		F87C80542A23AD95002E9C72 /* 2022 */ = {
+			isa = PBXGroup;
+			children = (
+				F87C80552A23AE39002E9C72 /* WWDC2022View.swift */,
+			);
+			path = 2022;
+			sourceTree = "<group>";
+		};
 		F87D1F722A1A0E9C00F3FBBD /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -618,6 +638,7 @@
 				F8CD8D3A2931D62E00DCB3C0 /* Terminal */,
 				F8CD8D3D2931D74C00DCB3C0 /* Algorithm */,
 				F8CD8D3F2931D84A00DCB3C0 /* Data */,
+				F87C80532A23AD74002E9C72 /* WWDC */,
 				F8CD8D3E2931D7D300DCB3C0 /* Knowledge */,
 				F8F054BD2A0277D4002F1EFE /* Vapor */,
 			);
@@ -810,6 +831,7 @@
 				F8D8564629F44A8C004B4877 /* UIColor.swift */,
 				F8FCA20329F52D0B0045B33B /* UIScrollView.swift */,
 				F8FCA20B29F598920045B33B /* UIDevice.swift */,
+				F89F57212A234C120026FC86 /* UIControl.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1036,6 +1058,7 @@
 				F87D1F7B2A1A203500F3FBBD /* Item+CoreDataProperties.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */,
+				F89F57222A234C120026FC86 /* UIControl.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
 				F8FCA1FE29F52B080045B33B /* UIViewController.swift in Sources */,
 				F8F1BCDB29C36B88003BB6EB /* AppIconView.swift in Sources */,
@@ -1061,6 +1084,7 @@
 				F82E22F92A0F7392005ABD46 /* TabItemPosition.swift in Sources */,
 				F8C8C46A2992CDC60048EF21 /* xcrun.swift in Sources */,
 				F8C234E629D04BBA00C512F4 /* PeelEffect.swift in Sources */,
+				F87C80562A23AE39002E9C72 /* WWDC2022View.swift in Sources */,
 				F82E22F52A0F63CF005ABD46 /* TabItem.swift in Sources */,
 				F87D1F7A2A1A203500F3FBBD /* Item+CoreDataClass.swift in Sources */,
 				F832EAB829605A470063C979 /* StringExt.swift in Sources */,

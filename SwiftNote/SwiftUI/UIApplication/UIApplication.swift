@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: - Tìm màn hình đang hiển thị
 extension UIApplication {
@@ -41,6 +42,10 @@ extension UIApplication {
         }
         
         return controller
+    }
+    
+    func changeRoot<Content>(to view: Content) where Content: View {
+        UIApplication.shared.keyWindowDev?.rootViewController = UIHostingController(rootView: view)
     }
 }
 

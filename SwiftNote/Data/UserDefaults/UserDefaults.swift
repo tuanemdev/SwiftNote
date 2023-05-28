@@ -37,5 +37,15 @@
  iMazing: https://imazing.com/
  
  RELEASE:
+ Sử dụng Apple Configurator https://apps.apple.com/app/apple-configurator/id1037126344
+ + Đăng nhập Apple Configurator với Apple ID trùng với tài khoản sử dụng đăng nhập trên điện thoại
+ + Kết nối điện thoại với macOS qua cáp
+ + Dùng Finder đi tới địa chỉ: ~/Library/Group Containers/K36BKF7T3D.group.com.apple.configurator/Library/Caches/Assets/TemporaryItems/MobileApps
+   (Nếu chưa từng dùng Apple Configurator thì dừng lại ở thư mục Assets vì 2 folder kia chưa được tạo)
+ + Chọn thêm App, chọn App muốn cài vào iPhone và đợi
+   Khi App đó chưa có trên iPhone thì file cache .ipa sẽ bị xoá đi rất nhanh nên tốt nhất là chọn cài những App đã có trên iPhone.
+   Lúc này iPhone sẽ hỏi là App đó đã có rồi bạn muốn ... làm gì với nó? Đây là khoảng thời gian mà file .ipa cache không bị xoá và ta có thể tận dụng để lấy file .ipa
+   (trick: các file .ipa khi dùng tính năng update App trên iPhone có thời gian xoá lâu, chẳng hạn khi tắt macOS đi nên nếu App cần lấy đúng lúc nó có bản cập nhật có thể tận dụng)
+ + Đổi tên .ipa thành .zip, giải nén file .zip vừa tạo. Tìm tới App trong folder Payload và chọn Show Package Contents
+ Tuy nhiên cách trên cũng chỉ mới hiển thị được nội dung của App mới tinh, chưa lấy được thông tin người dùng (Info.plist, các file Resource)
  */
-#warning("Incomplete: Get UserDefaults of Release App")
