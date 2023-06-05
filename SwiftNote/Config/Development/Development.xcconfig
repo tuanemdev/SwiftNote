@@ -1,0 +1,13 @@
+//
+//  Development.xcconfig
+//  SwiftNote
+//
+//  Created by Nguyen Tuan Anh on 06/06/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+DOMAIN = dev.tuanem.com
+BUILD_SETTING_DECLARATION_NAME = BUILD_SETTING_VALUE_DEFINITION_DEVELOPMENT
+GOOGLE_SERVICE_INFO_PLIST = Config/Development/GoogleService-Info-Development.plist

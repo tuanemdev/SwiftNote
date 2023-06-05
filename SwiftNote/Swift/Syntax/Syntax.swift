@@ -18,3 +18,10 @@ import Foundation
  #error("This must be done")
  Comment lại dòng này để có thể biên dịch
  */
+
+/// Làm việc với UIKit và custom view
+#if !TARGET_INTERFACE_BUILDER
+   // Run this code only in the app
+#else
+   // Run this code only in Interface Builder
+#endif

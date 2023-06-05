@@ -147,5 +147,7 @@ final class ChangeAppIconViewModel: ObservableObject {
           (Khuyên dùng) Khai báo thủ công các AppIcon sẽ được sử dụng
         + Thứ hai: Include All App Icon Assets
           Tự động thêm tất cả các AppIcon vào project
+     
+        Thay đổi icon mặc định ban đầu bằng key: Primary App Icon Set Name
      */
 }

@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Add image to your library</string>
+	<key>BUILD_SETTING_DECLARATION_NAME</key>
+	<string>$(BUILD_SETTING_DECLARATION_NAME)</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
@@ -17,6 +17,14 @@
 			</array>
 		</dict>
 	</array>
+	<key>CONFIGURATION</key>
+	<string>$(CONFIGURATION)</string>
+	<key>DOMAIN</key>
+	<string>$(DOMAIN)</string>
+	<key>GOOGLE_SERVICE_INFO_PLIST</key>
+	<string>$(GOOGLE_SERVICE_INFO_PLIST)</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Pacifico.ttf</string>

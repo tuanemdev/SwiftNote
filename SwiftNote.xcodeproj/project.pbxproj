@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8193C662A33FA8800CA7809 /* ConfigurationProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8193C652A33FA8800CA7809 /* ConfigurationProvider.swift */; };
+		F8193C682A3411F000CA7809 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8193C672A3411F000CA7809 /* AppEnvironment.swift */; };
 		F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3BA29E97CE600231362 /* GIFImageView.swift */; };
 		F81BF3BD29E97D9B00231362 /* GIFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81BF3BC29E97D9B00231362 /* GIFView.swift */; };
 		F81BF3BF29E9833000231362 /* how-i-study.gif in Resources */ = {isa = PBXBuildFile; fileRef = F81BF3BE29E9833000231362 /* how-i-study.gif */; };
@@ -104,6 +106,7 @@
 		F8E8A6C82980E03B0003A151 /* ArrayExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C72980E03B0003A151 /* ArrayExt.swift */; };
 		F8E8A6CA2980F61B0003A151 /* DataExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E8A6C92980F61B0003A151 /* DataExt.swift */; };
 		F8EBB98029E5D5F4000A5C4D /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */; };
+		F8EC21372A2E27CF00673AF9 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8EC21362A2E27CF00673AF9 /* Configuration.swift */; };
 		F8F054BF2A027804002F1EFE /* Vapor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F054BE2A027804002F1EFE /* Vapor.swift */; };
 		F8F1BCCE29C2EEC5003BB6EB /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD029C2EEC5003BB6EB /* Localizable.stringsdict */; };
 		F8F1BCD529C328BA003BB6EB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F8F1BCD729C328BA003BB6EB /* InfoPlist.strings */; };
@@ -140,6 +143,8 @@
 /* Begin PBXFileReference section */
 		F80D2D1029443B30007C6D1A /* Stacks.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Stacks.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F80D2D12294442FD007C6D1A /* LinkedLists.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = LinkedLists.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F8193C652A33FA8800CA7809 /* ConfigurationProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationProvider.swift; sourceTree = "<group>"; };
+		F8193C672A3411F000CA7809 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
 		F81BF3BA29E97CE600231362 /* GIFImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFImageView.swift; sourceTree = "<group>"; };
 		F81BF3BC29E97D9B00231362 /* GIFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GIFView.swift; sourceTree = "<group>"; };
 		F81BF3BE29E9833000231362 /* how-i-study.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "how-i-study.gif"; sourceTree = "<group>"; };
@@ -245,6 +250,10 @@
 		F8E8A6C72980E03B0003A151 /* ArrayExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExt.swift; sourceTree = "<group>"; };
 		F8E8A6C92980F61B0003A151 /* DataExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExt.swift; sourceTree = "<group>"; };
 		F8EBB97F29E5D5F4000A5C4D /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		F8EC21362A2E27CF00673AF9 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		F8EC21412A2E4D1A00673AF9 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
+		F8EC21422A2E4D4700673AF9 /* Staging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Staging.xcconfig; sourceTree = "<group>"; };
+		F8EC21432A2E4D8100673AF9 /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		F8F054BE2A027804002F1EFE /* Vapor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vapor.swift; sourceTree = "<group>"; };
 		F8F1BCCF29C2EEC5003BB6EB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
 		F8F1BCD229C31338003BB6EB /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = vi; path = vi.lproj/Localizable.stringsdict; sourceTree = "<group>"; };
@@ -632,6 +641,7 @@
 			children = (
 				F8BF46D62956D3E9000D5ABA /* Info.plist */,
 				F8BF46BD2956476A000D5ABA /* SwiftNote.entitlements */,
+				F8EC21352A2E278400673AF9 /* Config */,
 				F8CD8D302931CBCD00DCB3C0 /* ContentView */,
 				F8CD8D3C2931D69900DCB3C0 /* Swift */,
 				F8CD8D3B2931D64A00DCB3C0 /* SwiftUI */,
@@ -873,6 +883,43 @@
 			path = UIApplication;
 			sourceTree = "<group>";
 		};
+		F8EC21352A2E278400673AF9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F8193C672A3411F000CA7809 /* AppEnvironment.swift */,
+				F8EC21362A2E27CF00673AF9 /* Configuration.swift */,
+				F8193C652A33FA8800CA7809 /* ConfigurationProvider.swift */,
+				F8EC213E2A2E4C6400673AF9 /* Development */,
+				F8EC213F2A2E4C7200673AF9 /* Staging */,
+				F8EC21402A2E4C8A00673AF9 /* Production */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F8EC213E2A2E4C6400673AF9 /* Development */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC21412A2E4D1A00673AF9 /* Development.xcconfig */,
+			);
+			path = Development;
+			sourceTree = "<group>";
+		};
+		F8EC213F2A2E4C7200673AF9 /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC21422A2E4D4700673AF9 /* Staging.xcconfig */,
+			);
+			path = Staging;
+			sourceTree = "<group>";
+		};
+		F8EC21402A2E4C8A00673AF9 /* Production */ = {
+			isa = PBXGroup;
+			children = (
+				F8EC21432A2E4D8100673AF9 /* Production.xcconfig */,
+			);
+			path = Production;
+			sourceTree = "<group>";
+		};
 		F8F054BD2A0277D4002F1EFE /* Vapor */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1105,7 @@
 				F87D1F7B2A1A203500F3FBBD /* Item+CoreDataProperties.swift in Sources */,
 				F8BF46D52956CA6A000D5ABA /* NavigationPath.swift in Sources */,
 				F8A3DBED29FECC250050D15A /* APIRequestExample.swift in Sources */,
+				F8193C682A3411F000CA7809 /* AppEnvironment.swift in Sources */,
 				F89F57222A234C120026FC86 /* UIControl.swift in Sources */,
 				F866F52A294DB2C9005FF046 /* CollectionExt.swift in Sources */,
 				F8FCA1FE29F52B080045B33B /* UIViewController.swift in Sources */,
@@ -1075,6 +1123,7 @@
 				F866F527294DA790005FF046 /* PlatformViewModifier.swift in Sources */,
 				F82E22EE2A0F15E6005ABD46 /* HighlightNewView.swift in Sources */,
 				F87D1F712A18D93E00F3FBBD /* HapticFeedback.swift in Sources */,
+				F8EC21372A2E27CF00673AF9 /* Configuration.swift in Sources */,
 				F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */,
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
@@ -1094,6 +1143,7 @@
 				F8CD8D522932038100DCB3C0 /* PhotosPicker.swift in Sources */,
 				F8BD173429C892E30047B844 /* UserDefaults.swift in Sources */,
 				F8E744B62951EFD800AE3579 /* SceneDelegate.swift in Sources */,
+				F8193C662A33FA8800CA7809 /* ConfigurationProvider.swift in Sources */,
 				F8CD8D1E2931C43B00DCB3C0 /* SwiftNoteApp.swift in Sources */,
 				F866F525294DA192005FF046 /* BindingExt.swift in Sources */,
 				F89216D529CF4A19000900D0 /* Keychain.swift in Sources */,
@@ -1142,7 +1192,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F8BF46FE2956FEE6000D5ABA /* Debug */ = {
+		F8BF46FE2956FEE6000D5ABA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
@@ -1167,36 +1217,9 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Development;
 		};
-		F8BF46FF2956FEE6000D5ABA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UZVJXS2K9J;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Payload Modification/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Payload Modification";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tuanem.SwiftNote.Payload-Modification";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		F8CD8D262931C43C00DCB3C0 /* Debug */ = {
+		F8CD8D262931C43C00DCB3C0 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1252,13 +1275,52 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D DEVELOPMENT";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		F8CD8D272931C43C00DCB3C0 /* Release */ = {
+		F8CD8D292931C43C00DCB3C0 /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EC21412A2E4D1A00673AF9 /* Development.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIcon-TE";
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-TE";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SwiftNote/SwiftNote.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftNote/ContentView/Preview Content\"";
+				DEVELOPMENT_TEAM = UZVJXS2K9J;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftNote/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "need to scan QR code";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 1995 TuanEm Inc. All rights reserved.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add image to your library";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Dark;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuanem.SwiftNote;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		F8EC21382A2E285A00673AF9 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1293,11 +1355,17 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1305,17 +1373,19 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D PRODUCTION";
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				VALIDATE_PRODUCT = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Release;
+			name = Production;
 		};
-		F8CD8D292931C43C00DCB3C0 /* Debug */ = {
+		F8EC21392A2E285A00673AF9 /* Production */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EC21432A2E4D8100673AF9 /* Production.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1329,6 +1399,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftNote/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "need to scan QR code";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 1995 TuanEm Inc. All rights reserved.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add image to your library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1346,10 +1418,101 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Production;
 		};
-		F8CD8D2A2931C43C00DCB3C0 /* Release */ = {
+		F8EC213A2A2E285A00673AF9 /* Production */ = {
 			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZVJXS2K9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Payload Modification/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Payload Modification";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuanem.SwiftNote.Payload-Modification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Production;
+		};
+		F8EC213B2A2E4A6400673AF9 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES[sdk=*]" = "AppIcon-TE";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-D STAGING";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		F8EC213C2A2E4A6400673AF9 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8EC21422A2E4D4700673AF9 /* Staging.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1363,6 +1526,8 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftNote/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "need to scan QR code";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 1995 TuanEm Inc. All rights reserved.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Add image to your library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -1380,7 +1545,34 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Staging;
+		};
+		F8EC213D2A2E4A6400673AF9 /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Payload Modification/Payload Modification.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UZVJXS2K9J;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Payload Modification/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Payload Modification";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tuanem.SwiftNote.Payload-Modification";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -1388,29 +1580,32 @@
 		F8BF47002956FEE6000D5ABA /* Build configuration list for PBXNativeTarget "Payload Modification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8BF46FE2956FEE6000D5ABA /* Debug */,
-				F8BF46FF2956FEE6000D5ABA /* Release */,
+				F8BF46FE2956FEE6000D5ABA /* Development */,
+				F8EC213D2A2E4A6400673AF9 /* Staging */,
+				F8EC213A2A2E285A00673AF9 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		F8CD8D152931C43A00DCB3C0 /* Build configuration list for PBXProject "SwiftNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8CD8D262931C43C00DCB3C0 /* Debug */,
-				F8CD8D272931C43C00DCB3C0 /* Release */,
+				F8CD8D262931C43C00DCB3C0 /* Development */,
+				F8EC213B2A2E4A6400673AF9 /* Staging */,
+				F8EC21382A2E285A00673AF9 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		F8CD8D282931C43C00DCB3C0 /* Build configuration list for PBXNativeTarget "SwiftNote" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F8CD8D292931C43C00DCB3C0 /* Debug */,
-				F8CD8D2A2931C43C00DCB3C0 /* Release */,
+				F8CD8D292931C43C00DCB3C0 /* Development */,
+				F8EC213C2A2E4A6400673AF9 /* Staging */,
+				F8EC21392A2E285A00673AF9 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 
