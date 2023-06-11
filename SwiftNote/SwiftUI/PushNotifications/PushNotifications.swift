@@ -8,6 +8,13 @@
 import SwiftUI
 import UserNotifications
 
+/*
+ Trong WWDC 2023, Apple giới thiệu cách test Push Notification mới
+ https://icloud.developer.apple.com/dashboard/notifications/
+ Chỉ đơn giản chọn App, điền thông tin device Token và nội dung payload muốn gửi và sau đó ấn gửi
+ Việc test push hiện giờ đã trở nên vô cùng dễ dàng
+ */
+
 extension AppDelegate {
     // MARK: - Register Notifications
     // Request quyền và đăng ký với APNs

@@ -20,6 +20,7 @@ import OSLog
 final class LogStore: ObservableObject {
     // mảng dùng để chứa thông tin log đã lưu
     @Published private(set) var entries: [String] = []
+    let logFileURL: URL = File.shared.ducumentURL.appendingPathComponent("LogStore.txt")
     // subsystem và category sẽ dùng để làm bộ lọc thông tin trong Console
     // có thể thu thập thông tin log bằng 3 cách: app Console, Xcode debug console, log command line tool
     private let logger: Logger = .init(subsystem: Bundle.main.bundleIdentifier!, category: String(describing: LogStore.self))
@@ -79,6 +80,16 @@ final class LogStore: ObservableObject {
                 .compactMap { $0 as? OSLogEntryLog }
                 .filter { $0.subsystem == Bundle.main.bundleIdentifier! }
                 .map { "[\($0.date.formatted())] [\($0.category)] \($0.composedMessage)" }
+        } catch {
+            logger.warning("\(error.localizedDescription, privacy: .public)")
+        }
+    }
+    
+    func save() {
+        do {
+            try entries
+                .joined(separator: "\n")
+                .write(to: logFileURL, atomically: true, encoding: String.Encoding.utf8)
         } catch {
             logger.warning("\(error.localizedDescription, privacy: .public)")
         }

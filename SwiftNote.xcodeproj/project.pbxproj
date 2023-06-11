@@ -97,6 +97,7 @@
 		F8D0FA0A2959061600B3D3A2 /* RemoveBackgroundColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */; };
 		F8D5981D29D8774600315BDD /* ShimmerEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D5981C29D8774600315BDD /* ShimmerEffect.swift */; };
 		F8D8564729F44A8C004B4877 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D8564629F44A8C004B4877 /* UIColor.swift */; };
+		F8DBD1342A35865C00023A08 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DBD1332A35865C00023A08 /* File.swift */; };
 		F8DDADA629D1CDA0003021C8 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DDADA529D1CDA0003021C8 /* Fonts.swift */; };
 		F8DDADA829D1D06D003021C8 /* Pacifico.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8DDADA729D1D06C003021C8 /* Pacifico.ttf */; };
 		F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E744792951ECD700AE3579 /* AppDelegate.swift */; };
@@ -241,6 +242,7 @@
 		F8D0FA092959061600B3D3A2 /* RemoveBackgroundColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoveBackgroundColor.swift; sourceTree = "<group>"; };
 		F8D5981C29D8774600315BDD /* ShimmerEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShimmerEffect.swift; sourceTree = "<group>"; };
 		F8D8564629F44A8C004B4877 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		F8DBD1332A35865C00023A08 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F8DDADA529D1CDA0003021C8 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		F8DDADA729D1D06C003021C8 /* Pacifico.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Pacifico.ttf; sourceTree = "<group>"; };
 		F8E744792951ECD700AE3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -789,6 +791,7 @@
 				F8BD173229C891DA0047B844 /* UserDefaults */,
 				F89216D329CF49EA000900D0 /* Keychain */,
 				F87D1F722A1A0E9C00F3FBBD /* CoreData */,
+				F8DBD1322A35864000023A08 /* File */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -844,6 +847,14 @@
 				F89F57212A234C120026FC86 /* UIControl.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		F8DBD1322A35864000023A08 /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F8DBD1332A35865C00023A08 /* File.swift */,
+			);
+			path = File;
 			sourceTree = "<group>";
 		};
 		F8DDADA429D1CD76003021C8 /* Fonts */ = {
@@ -1126,6 +1137,7 @@
 				F8EC21372A2E27CF00673AF9 /* Configuration.swift in Sources */,
 				F81BF3BB29E97CE600231362 /* GIFImageView.swift in Sources */,
 				F8E7447A2951ECD700AE3579 /* AppDelegate.swift in Sources */,
+				F8DBD1342A35865C00023A08 /* File.swift in Sources */,
 				F8CD8D4F2931F7D700DCB3C0 /* LottieView.swift in Sources */,
 				F8F054BF2A027804002F1EFE /* Vapor.swift in Sources */,
 				F8A3DBF429FEE0570050D15A /* APIRequest.swift in Sources */,
